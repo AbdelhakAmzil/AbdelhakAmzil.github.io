@@ -38,6 +38,11 @@ npx serve .
 
 puis ouvrir l'adresse affichée (http://localhost:3000).
 
+## Après une modification du CSS ou du JavaScript
+
+Changer le numéro `?v=…` des liens vers `site.css`, `projets.js` et `galerie.js` dans les 6 pages (par exemple la date du
+jour) : les navigateurs téléchargent alors la nouvelle version au lieu de garder l'ancienne en cache.
+
 ## Structure
 
 - `index.html`, `fr/index.html` : accueil (services, réalisations, déroulement, questions, devis) ;
