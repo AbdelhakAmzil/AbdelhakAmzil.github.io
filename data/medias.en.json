@@ -1,5 +1,5 @@
 {
-  "_aide": "type: photo or video. Photo: image = path from the site root (assets/img/…). Video: youtube = video ID (unlisted), image = optional thumbnail. Keep in sync with data/medias.fr.json.",
+  "_aide": "type: photo or video. Photo: image = path from the site root (assets/img/…), vignette = lighter copy (optional). Video: fichier = mp4 in assets/video/ or youtube = video ID (unlisted), image = poster. Keep in sync with data/medias.fr.json.",
   "projets": [
     {
       "id": "mall-prive",
@@ -7,43 +7,119 @@
       "medias": [
         {
           "type": "video",
-          "titre": "Demo: from order to delivery",
-          "legende": "Purchase on the site, brand response, check-in at the hub and parcel preparation.",
+          "titre": "Demo: customer site",
+          "legende": "Home page, a private sale and a product page (sample data).",
+          "fichier": "assets/video/mall-prive-client.mp4",
           "youtube": "",
-          "duree": "",
-          "image": ""
+          "duree": "0:20",
+          "image": "assets/video/mall-prive-client.webp"
+        },
+        {
+          "type": "video",
+          "titre": "Demo: back-office, from orders to the parcel",
+          "legende": "Orders by sale, check-in at the hub, parcels to prepare and the parcel record.",
+          "fichier": "assets/video/mall-prive-bo.mp4",
+          "youtube": "",
+          "duree": "0:23",
+          "image": "assets/video/mall-prive-bo.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Customer site on desktop and mobile",
+          "legende": "Responsive design, French and Arabic.",
+          "image": "assets/img/mall-prive/mall-prive-apercu.webp",
+          "vignette": "assets/img/mall-prive/mall-prive-apercu-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Customer site: home page",
+          "legende": "Current private sales, categories and search.",
+          "image": "assets/img/mall-prive/client-accueil.webp",
+          "vignette": "assets/img/mall-prive/client-accueil-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Customer site: a private sale",
+          "legende": "Brand page with countdown, filters and sorting.",
+          "image": "assets/img/mall-prive/client-vente.webp",
+          "vignette": "assets/img/mall-prive/client-vente-800.webp"
         },
         {
           "type": "photo",
           "titre": "Customer site: product page",
-          "legende": "Private sales by brand, quantity limits per customer.",
-          "image": ""
+          "legende": "Discounted price, sizes, quantity limits per customer.",
+          "image": "assets/img/mall-prive/client-produit.webp",
+          "vignette": "assets/img/mall-prive/client-produit-800.webp"
         },
         {
           "type": "photo",
-          "titre": "Vendor portal: parcels to ship",
-          "legende": "The brand confirms shipment or reports an item unavailable.",
-          "image": ""
+          "titre": "Customer site on mobile",
+          "legende": "Home page, sale and product page on a phone.",
+          "image": "assets/img/mall-prive/mobile-trio.webp",
+          "vignette": "assets/img/mall-prive/mobile-trio-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Vendor portal: dashboard",
+          "legende": "The brand follows its sales, orders and parcels to ship.",
+          "image": "assets/img/mall-prive/vendeur-tableau-de-bord.webp",
+          "vignette": "assets/img/mall-prive/vendeur-tableau-de-bord-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Vendor portal: private sales",
+          "legende": "Sales proposed by the brand and their status.",
+          "image": "assets/img/mall-prive/vendeur-ventes.webp",
+          "vignette": "assets/img/mall-prive/vendeur-ventes-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Back-office: orders",
+          "legende": "Sub-orders by brand, filters and CSV export.",
+          "image": "assets/img/mall-prive/bo-commandes.webp",
+          "vignette": "assets/img/mall-prive/bo-commandes-800.webp"
         },
         {
           "type": "photo",
           "titre": "Back-office: orders by sale",
           "legende": "Arrival at the hub, receiving and receiving notes.",
-          "image": ""
+          "image": "assets/img/mall-prive/bo-commandes-par-vente.webp",
+          "vignette": "assets/img/mall-prive/bo-commandes-par-vente-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Back-office: check-in at the hub",
+          "legende": "Each parcel is marked received, damaged or missing.",
+          "image": "assets/img/mall-prive/bo-reception-pointage.webp",
+          "vignette": "assets/img/mall-prive/bo-reception-pointage-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Back-office: deliveries",
+          "legende": "Parcels, preparation, pickups and cash on delivery.",
+          "image": "assets/img/mall-prive/bo-livraisons.webp",
+          "vignette": "assets/img/mall-prive/bo-livraisons-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Back-office: parcels to prepare",
+          "legende": "Parcels received at the hub, ready to be packed.",
+          "image": "assets/img/mall-prive/bo-a-preparer.webp",
+          "vignette": "assets/img/mall-prive/bo-a-preparer-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Back-office: parcel record",
+          "legende": "Shipment details, carrier handover and history (recipient blurred).",
+          "image": "assets/img/mall-prive/bo-fiche-colis.webp",
+          "vignette": "assets/img/mall-prive/bo-fiche-colis-800.webp"
         },
         {
           "type": "photo",
           "titre": "PDF receiving note",
           "legende": "Generated at check-in, with no customer personal data.",
-          "image": ""
-        },
-        {
-          "type": "video",
-          "titre": "Demo: two-factor sign-in",
-          "legende": "Team area protected by Keycloak and a 6-digit code.",
-          "youtube": "",
-          "duree": "",
-          "image": ""
+          "image": "assets/img/mall-prive/bon-reception-pdf.webp",
+          "vignette": "assets/img/mall-prive/bon-reception-pdf-800.webp"
         }
       ]
     },

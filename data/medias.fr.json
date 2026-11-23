@@ -1,5 +1,5 @@
 {
-  "_aide": "type : photo ou video. Photo : image = chemin depuis la racine du site (assets/img/…). Vidéo : youtube = identifiant de la vidéo (non répertoriée), image = vignette facultative. Garder data/medias.en.json au même contenu, en anglais.",
+  "_aide": "type : photo ou video. Photo : image = chemin depuis la racine du site (assets/img/…), vignette = copie plus légère (facultatif). Vidéo : fichier = mp4 dans assets/video/ ou youtube = identifiant (non répertoriée), image = affiche. Garder data/medias.en.json au même contenu, en anglais.",
   "projets": [
     {
       "id": "mall-prive",
@@ -7,43 +7,119 @@
       "medias": [
         {
           "type": "video",
-          "titre": "Démo : de la commande à la livraison",
-          "legende": "Achat sur le site, réponse de la marque, pointage au hub et préparation du colis.",
+          "titre": "Démo : site client",
+          "legende": "Accueil, une vente privée et une fiche produit (données fictives).",
+          "fichier": "assets/video/mall-prive-client.mp4",
           "youtube": "",
-          "duree": "",
-          "image": ""
+          "duree": "0:20",
+          "image": "assets/video/mall-prive-client.webp"
+        },
+        {
+          "type": "video",
+          "titre": "Démo : back-office, des commandes au colis",
+          "legende": "Commandes par vente, pointage au hub, colis à préparer et fiche colis.",
+          "fichier": "assets/video/mall-prive-bo.mp4",
+          "youtube": "",
+          "duree": "0:23",
+          "image": "assets/video/mall-prive-bo.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Site client sur ordinateur et mobile",
+          "legende": "Design adaptatif, en français et en arabe.",
+          "image": "assets/img/mall-prive/mall-prive-apercu.webp",
+          "vignette": "assets/img/mall-prive/mall-prive-apercu-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Site client : accueil",
+          "legende": "Ventes en cours, univers et recherche.",
+          "image": "assets/img/mall-prive/client-accueil.webp",
+          "vignette": "assets/img/mall-prive/client-accueil-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Site client : une vente privée",
+          "legende": "Page de la marque avec compte à rebours, filtres et tri.",
+          "image": "assets/img/mall-prive/client-vente.webp",
+          "vignette": "assets/img/mall-prive/client-vente-800.webp"
         },
         {
           "type": "photo",
           "titre": "Site client : fiche produit",
-          "legende": "Ventes privées par marque, quantités limitées par client.",
-          "image": ""
+          "legende": "Prix remisé, tailles, quantités limitées par client.",
+          "image": "assets/img/mall-prive/client-produit.webp",
+          "vignette": "assets/img/mall-prive/client-produit-800.webp"
         },
         {
           "type": "photo",
-          "titre": "Portail vendeur : colis à envoyer",
-          "legende": "La marque confirme l'envoi ou signale une indisponibilité.",
-          "image": ""
+          "titre": "Site client sur mobile",
+          "legende": "Accueil, vente et fiche produit sur téléphone.",
+          "image": "assets/img/mall-prive/mobile-trio.webp",
+          "vignette": "assets/img/mall-prive/mobile-trio-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Portail vendeur : tableau de bord",
+          "legende": "La marque suit ses ventes, ses commandes et ses colis à envoyer.",
+          "image": "assets/img/mall-prive/vendeur-tableau-de-bord.webp",
+          "vignette": "assets/img/mall-prive/vendeur-tableau-de-bord-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Portail vendeur : ventes privées",
+          "legende": "Les ventes proposées par la marque et leur statut.",
+          "image": "assets/img/mall-prive/vendeur-ventes.webp",
+          "vignette": "assets/img/mall-prive/vendeur-ventes-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Back-office : commandes",
+          "legende": "Sous-commandes par marque, filtres et export CSV.",
+          "image": "assets/img/mall-prive/bo-commandes.webp",
+          "vignette": "assets/img/mall-prive/bo-commandes-800.webp"
         },
         {
           "type": "photo",
           "titre": "Back-office : commandes par vente",
           "legende": "Arrivée au hub, réception et bons de réception.",
-          "image": ""
+          "image": "assets/img/mall-prive/bo-commandes-par-vente.webp",
+          "vignette": "assets/img/mall-prive/bo-commandes-par-vente-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Back-office : pointage au hub",
+          "legende": "Chaque colis est pointé reçu, abîmé ou manquant.",
+          "image": "assets/img/mall-prive/bo-reception-pointage.webp",
+          "vignette": "assets/img/mall-prive/bo-reception-pointage-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Back-office : livraisons",
+          "legende": "Colis, préparation, ramassages et paiement à la livraison.",
+          "image": "assets/img/mall-prive/bo-livraisons.webp",
+          "vignette": "assets/img/mall-prive/bo-livraisons-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Back-office : colis à préparer",
+          "legende": "Colis reçus au hub, prêts à être emballés.",
+          "image": "assets/img/mall-prive/bo-a-preparer.webp",
+          "vignette": "assets/img/mall-prive/bo-a-preparer-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Back-office : fiche colis",
+          "legende": "Expédition, remise au transporteur et historique (destinataire flouté).",
+          "image": "assets/img/mall-prive/bo-fiche-colis.webp",
+          "vignette": "assets/img/mall-prive/bo-fiche-colis-800.webp"
         },
         {
           "type": "photo",
           "titre": "Bon de réception PDF",
           "legende": "Généré au pointage, sans donnée personnelle du client.",
-          "image": ""
-        },
-        {
-          "type": "video",
-          "titre": "Démo : connexion avec double facteur",
-          "legende": "Espace équipe protégé par Keycloak et un code à 6 chiffres.",
-          "youtube": "",
-          "duree": "",
-          "image": ""
+          "image": "assets/img/mall-prive/bon-reception-pdf.webp",
+          "vignette": "assets/img/mall-prive/bon-reception-pdf-800.webp"
         }
       ]
     },

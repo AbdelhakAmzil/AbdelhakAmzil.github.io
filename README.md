@@ -23,9 +23,15 @@ son accord ; jamais de nom de personne, de clé, de mot de passe ni d'adresse in
 Tout se passe dans `data/medias.en.json` et `data/medias.fr.json`, un bloc par projet :
 
 - photo : `{ "type": "photo", "titre": "…", "legende": "…", "image": "assets/img/fichier.webp" }` ;
-- vidéo : `{ "type": "video", "titre": "…", "legende": "…", "youtube": "IDENTIFIANT", "duree": "2:15", "image": "" }`.
+- photo avec copie légère pour les vignettes : ajouter `"vignette": "assets/img/fichier-800.webp"` ;
+- vidéo du site : `{ "type": "video", "titre": "…", "legende": "…", "fichier": "assets/video/demo.mp4", "duree": "0:20", "image": "assets/video/demo.webp" }`
+  (mp4 H.264 de quelques Mo au plus, `image` = affiche) ;
+- vidéo YouTube : `{ "type": "video", "titre": "…", "legende": "…", "youtube": "IDENTIFIANT", "duree": "2:15", "image": "" }`.
 
-Vidéos : sur YouTube en « non répertoriée » ; l'identifiant est la fin de l'adresse (`youtu.be/IDENTIFIANT`). Le lecteur
+Captures Mall Privé : `assets/img/mall-prive/` (maquettes navigateur et téléphone, 1600 px et copie `-800`), démos dans
+`assets/video/`. Toutes faites avec des données fictives ; le destinataire de la fiche colis est flouté.
+
+Vidéos YouTube : sur YouTube en « non répertoriée » ; l'identifiant est la fin de l'adresse (`youtu.be/IDENTIFIANT`). Le lecteur
 YouTube (sans cookie) ne se charge qu'au clic. Lien direct vers un projet : `galerie.html?projet=kobor` (ou `fr/galerie.html?projet=kobor`).
 
 ## Voir le site sur son ordinateur

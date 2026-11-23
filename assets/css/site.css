@@ -77,7 +77,8 @@ p { margin: 0; }
 /* Emplacement de capture : remplacé par l'image dès qu'elle existe */
 .visuel { border-radius: 10px; background: var(--gris); color: var(--discret); display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; overflow: hidden; aspect-ratio: 16 / 10; }
 .visuel img { width: 100%; height: 100%; object-fit: cover; }
-.visuel--image { padding: 0; }
+.visuel--image { padding: 0; aspect-ratio: auto; background: #EEF1FF; }
+.visuel--image img { display: block; height: auto; }
 
 .chiffres { background: var(--surface); border-block: 1px solid var(--bordure); }
 .chiffres .conteneur { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; padding-block: 28px; }
@@ -110,6 +111,7 @@ p { margin: 0; }
 
 .projet-phare { background: var(--surface); border: 1px solid var(--bordure); border-radius: 16px; overflow: hidden; display: flex; flex-wrap: wrap; margin-bottom: 40px; }
 .projet-phare .visuel { flex: 1 1 520px; min-width: 0; border-radius: 0; aspect-ratio: auto; min-height: 340px; }
+.projet-phare .visuel--image img { height: 100%; object-fit: cover; }
 .projet-phare__texte { flex: 1 1 400px; min-width: 0; padding: 36px; display: flex; flex-direction: column; gap: 16px; }
 .projet-phare h3 { font-size: 30px; }
 .projet-phare .bouton { margin-top: auto; align-self: flex-start; min-height: 44px; }
@@ -178,6 +180,7 @@ p { margin: 0; }
 .fiche dd { margin: 4px 0 0; font-weight: 600; }
 .grande-capture { padding-top: 64px; }
 .grande-capture .visuel { border-radius: 16px; border: 1px solid #D5D9E1; aspect-ratio: 16 / 8; }
+.grande-capture .visuel--image { aspect-ratio: auto; }
 .deux-colonnes { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
 .deux-colonnes h2 { font-size: 28px; margin-bottom: 12px; }
 .deux-colonnes ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: var(--texte); line-height: 1.6; }
@@ -207,7 +210,8 @@ p { margin: 0; }
 .lecteur[hidden], .vide[hidden] { display: none; }
 .media { flex: 999 1 640px; min-width: 0; margin: 0; background: var(--surface); border: 1px solid var(--bordure); border-radius: 16px; overflow: hidden; }
 .ecran { position: relative; aspect-ratio: 16 / 9; background: var(--sombre); display: flex; align-items: center; justify-content: center; text-align: center; }
-.ecran img, .ecran iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: contain; }
+.ecran:has(img), .ecran:has(video) { background: #EEF1FF; }
+.ecran img, .ecran iframe, .ecran video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: contain; }
 .ecran__texte { color: #B8C0CF; padding: 24px; max-width: 460px; line-height: 1.5; }
 .lecture { position: relative; width: 76px; height: 76px; border-radius: 50%; border: 0; background: #FFFFFF; cursor: pointer; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3); display: flex; align-items: center; justify-content: center; }
 .lecture[disabled] { opacity: 0.55; cursor: not-allowed; }
@@ -225,6 +229,10 @@ p { margin: 0; }
 .vignette { position: relative; width: 100%; min-height: 96px; padding: 12px; border-radius: 10px; background: var(--gris); border: 2px solid transparent; display: flex; flex-direction: column; justify-content: space-between; gap: 8px; cursor: pointer; font: inherit; text-align: left; overflow: hidden; }
 .vignette[aria-current="true"] { border-color: var(--accent); }
 .vignette img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.35; }
+.vignette:has(img) { padding: 0 0 10px; justify-content: flex-start; gap: 4px; background: var(--surface); border-color: var(--bordure); }
+.vignette:has(img)[aria-current="true"] { border-color: var(--accent); }
+.vignette:has(img) img { position: static; height: auto; aspect-ratio: 16 / 10; opacity: 1; background: #EEF1FF; }
+.vignette:has(img) .vignette__titre, .vignette:has(img) .vignette__type { padding: 0 10px; }
 .vignette__titre { position: relative; font-size: 12px; font-weight: 600; color: var(--texte); line-height: 1.35; }
 .vignette__type { position: relative; font-size: 11px; font-weight: 600; color: var(--discret); }
 .vide { padding: 48px 24px; border-radius: 16px; background: var(--surface); border: 1px dashed var(--bordure-forte); text-align: center; color: var(--discret); }

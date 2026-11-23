@@ -1,5 +1,5 @@
-// Galerie (anglais à la racine, français dans /fr/) : médias lus depuis data/medias.<langue>.json. Les vidéos YouTube se chargent seulement au clic
-// (youtube-nocookie : aucun cookie avant la lecture).
+// Galerie (anglais à la racine, français dans /fr/) : médias lus depuis data/medias.<langue>.json. Une vidéo est soit un fichier du site
+// (« fichier », mp4), soit une vidéo YouTube (« youtube », youtube-nocookie) ; dans les deux cas elle ne se charge qu'au clic.
 (function () {
   'use strict';
 
@@ -30,13 +30,20 @@
 
   function visionneuse(m) {
     if (m.type === 'video') {
-      const lisible = idYoutube.test(m.youtube || '');
+      const local = /^assets\/video\/[\w.-]+\.mp4$/.test(m.fichier || '');
+      const lisible = local || idYoutube.test(m.youtube || '');
       const bouton = el('button', { type: 'button', class: 'lecture', 'aria-label': T.lire + m.titre, disabled: lisible ? null : '' }, [
         el('span', { class: 'lecture__icone', 'aria-hidden': 'true' })
       ]);
       const fond = m.image ? el('img', { src: chemin(m.image), alt: '' }) : el('span', { class: 'ecran__texte', texte: lisible ? '' : T.videoAVenir + m.titre });
       if (lisible) {
         bouton.addEventListener('click', () => {
+          if (local) {
+            const v = el('video', { src: chemin(m.fichier), poster: m.image ? chemin(m.image) : null, controls: '', autoplay: '', playsinline: '', 'aria-label': m.titre });
+            v.muted = true;
+            $('ecran').replaceChildren(v);
+            return;
+          }
           $('ecran').replaceChildren(el('iframe', {
             src: 'https://www.youtube-nocookie.com/embed/' + m.youtube + '?autoplay=1&rel=0',
             title: m.titre, allow: 'autoplay; encrypted-media; picture-in-picture', allowfullscreen: '', loading: 'lazy'
@@ -67,7 +74,7 @@
         type: 'button', class: 'vignette', 'aria-current': i === etat.index ? 'true' : 'false',
         'aria-label': (x.type === 'video' ? T.video : T.photo) + ' : ' + x.titre
       }, [
-        x.image ? el('img', { src: chemin(x.image), alt: '' }) : null,
+        (x.vignette || x.image) ? el('img', { src: chemin(x.vignette || x.image), alt: '', loading: 'lazy' }) : null,
         el('span', { class: 'vignette__titre', texte: x.titre }),
         el('span', { class: 'vignette__type', texte: x.type === 'video' ? T.video + (x.duree ? ' · ' + x.duree : '') : T.photo })
       ]);
