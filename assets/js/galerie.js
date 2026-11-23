@@ -1,8 +1,18 @@
-// Galerie : médias lus depuis data/medias.json. Les vidéos YouTube se chargent seulement au clic
+// Galerie (anglais à la racine, français dans /fr/) : médias lus depuis data/medias.<langue>.json. Les vidéos YouTube se chargent seulement au clic
 // (youtube-nocookie : aucun cookie avant la lecture).
 (function () {
   'use strict';
 
+  const racine = document.documentElement.dataset.racine || '';
+  const fr = document.documentElement.lang.startsWith('fr');
+  const T = fr ? {
+    lire: 'Lire la vidéo : ', videoAVenir: 'Vidéo à venir : ', captureAVenir: 'Capture à venir : ',
+    video: 'Vidéo', photo: 'Photo', echec: 'La galerie ne s\'est pas chargée. Réessayez dans un instant.'
+  } : {
+    lire: 'Play the video: ', videoAVenir: 'Video coming soon: ', captureAVenir: 'Screenshot coming soon: ',
+    video: 'Video', photo: 'Photo', echec: 'The gallery could not be loaded. Please try again in a moment.'
+  };
+  const chemin = (c) => (!c || /^https?:/.test(c) ? c : racine + c);
   const etat = { projets: [], projet: 0, type: 'tous', index: 0 };
   const $ = (id) => document.getElementById(id);
 
@@ -21,10 +31,10 @@
   function visionneuse(m) {
     if (m.type === 'video') {
       const lisible = idYoutube.test(m.youtube || '');
-      const bouton = el('button', { type: 'button', class: 'lecture', 'aria-label': 'Lire la vidéo : ' + m.titre, disabled: lisible ? null : '' }, [
+      const bouton = el('button', { type: 'button', class: 'lecture', 'aria-label': T.lire + m.titre, disabled: lisible ? null : '' }, [
         el('span', { class: 'lecture__icone', 'aria-hidden': 'true' })
       ]);
-      const fond = m.image ? el('img', { src: m.image, alt: '' }) : el('span', { class: 'ecran__texte', texte: lisible ? '' : 'Vidéo à venir : ' + m.titre });
+      const fond = m.image ? el('img', { src: chemin(m.image), alt: '' }) : el('span', { class: 'ecran__texte', texte: lisible ? '' : T.videoAVenir + m.titre });
       if (lisible) {
         bouton.addEventListener('click', () => {
           $('ecran').replaceChildren(el('iframe', {
@@ -35,7 +45,7 @@
       }
       return [fond, bouton, m.duree ? el('span', { class: 'duree', texte: m.duree }) : null];
     }
-    return [m.image ? el('img', { src: m.image, alt: m.titre }) : el('span', { class: 'ecran__texte', texte: 'Capture à venir : ' + m.titre })];
+    return [m.image ? el('img', { src: chemin(m.image), alt: m.titre }) : el('span', { class: 'ecran__texte', texte: T.captureAVenir + m.titre })];
   }
 
   function afficher() {
@@ -55,11 +65,11 @@
     $('vignettes').replaceChildren(...liste.map((x, i) => {
       const b = el('button', {
         type: 'button', class: 'vignette', 'aria-current': i === etat.index ? 'true' : 'false',
-        'aria-label': (x.type === 'video' ? 'Vidéo : ' : 'Photo : ') + x.titre
+        'aria-label': (x.type === 'video' ? T.video : T.photo) + ' : ' + x.titre
       }, [
-        x.image ? el('img', { src: x.image, alt: '' }) : null,
+        x.image ? el('img', { src: chemin(x.image), alt: '' }) : null,
         el('span', { class: 'vignette__titre', texte: x.titre }),
-        el('span', { class: 'vignette__type', texte: x.type === 'video' ? 'Vidéo' + (x.duree ? ' · ' + x.duree : '') : 'Photo' })
+        el('span', { class: 'vignette__type', texte: x.type === 'video' ? T.video + (x.duree ? ' · ' + x.duree : '') : T.photo })
       ]);
       b.addEventListener('click', () => { etat.index = i; afficher(); });
       return el('li', {}, [b]);
@@ -73,7 +83,7 @@
 
   async function charger() {
     try {
-      const r = await fetch('data/medias.json', { cache: 'no-cache' });
+      const r = await fetch(racine + 'data/medias.' + (fr ? 'fr' : 'en') + '.json', { cache: 'no-cache' });
       if (!r.ok) { throw new Error(String(r.status)); }
       etat.projets = (await r.json()).projets;
       const demande = new URLSearchParams(location.search).get('projet');
@@ -91,7 +101,7 @@
       $('statut').textContent = '';
       afficher();
     } catch (e) {
-      $('statut').textContent = 'La galerie ne s\'est pas chargée. Réessayez dans un instant.';
+      $('statut').textContent = T.echec;
     }
   }
 

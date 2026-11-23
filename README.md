@@ -1,11 +1,12 @@
 # abdelhakamzil.github.io
 
-Portfolio d'Abdelhak Amzil — ingénieur en développement applicatif et IA. Site statique (HTML, CSS, JavaScript sans
-framework) publié par GitHub Pages.
+Portfolio freelance d'Abdelhak Amzil — développeur fullstack (web, e-commerce, Odoo, IA, mobile). Site statique
+(HTML, CSS, JavaScript sans framework) publié par GitHub Pages, en deux langues : anglais à la racine, français dans
+`fr/`. Chaque page a son équivalent dans l'autre langue (même nom de fichier).
 
 ## Mettre à jour les projets, sans toucher au code
 
-Tout se passe dans `data/projets.json` :
+Tout se passe dans `data/projets.en.json` et `data/projets.fr.json` (même contenu, une langue chacun) :
 
 - `phare` : le projet mis en avant (aujourd'hui Mall Privé) ;
 - `entreprise` : les projets réalisés en entreprise (KARTUAPP, Kobor ERP) ;
@@ -19,13 +20,13 @@ son accord ; jamais de nom de personne, de clé, de mot de passe ni d'adresse in
 
 ## Mettre à jour la galerie (photos et vidéos)
 
-Tout se passe dans `data/medias.json`, un bloc par projet :
+Tout se passe dans `data/medias.en.json` et `data/medias.fr.json`, un bloc par projet :
 
 - photo : `{ "type": "photo", "titre": "…", "legende": "…", "image": "assets/img/fichier.webp" }` ;
 - vidéo : `{ "type": "video", "titre": "…", "legende": "…", "youtube": "IDENTIFIANT", "duree": "2:15", "image": "" }`.
 
 Vidéos : sur YouTube en « non répertoriée » ; l'identifiant est la fin de l'adresse (`youtu.be/IDENTIFIANT`). Le lecteur
-YouTube (sans cookie) ne se charge qu'au clic. Lien direct vers un projet : `galerie.html?projet=kobor`.
+YouTube (sans cookie) ne se charge qu'au clic. Lien direct vers un projet : `galerie.html?projet=kobor` (ou `fr/galerie.html?projet=kobor`).
 
 ## Voir le site sur son ordinateur
 
@@ -39,10 +40,10 @@ puis ouvrir l'adresse affichée (http://localhost:3000).
 
 ## Structure
 
-- `index.html` : accueil ;
+- `index.html`, `fr/index.html` : accueil (services, réalisations, déroulement, questions, devis) ;
 - `assets/css/site.css` : styles communs ;
 - `assets/js/projets.js` : affichage des projets, filtres, formulaire de contact (ouvre la messagerie, rien n'est stocké) ;
 - `assets/cv/Abdelhak_AMZIL_CV.pdf` : CV téléchargeable ;
-- `mall-prive.html` : étude de cas Mall Privé ;
-- `galerie.html`, `assets/js/galerie.js` : photos et vidéos ;
-- `data/projets.json` : les projets ; `data/medias.json` : les médias de la galerie.
+- `mall-prive.html`, `fr/mall-prive.html` : étude de cas Mall Privé ;
+- `galerie.html`, `fr/galerie.html`, `assets/js/galerie.js` : photos et vidéos ;
+- `data/projets.<langue>.json` : les projets ; `data/medias.<langue>.json` : les médias de la galerie.

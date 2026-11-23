@@ -1,13 +1,15 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en" data-racine="">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Photos et vidéos des projets — Abdelhak Amzil</title>
-<meta name="description" content="Écrans et démonstrations vidéo des projets d'Abdelhak Amzil : Mall Privé, KARTUAPP, Kobor ERP et projets d'IA, avec des données fictives.">
-<meta property="og:title" content="Photos et vidéos des projets — Abdelhak Amzil">
+<title>Project photos and videos — Abdelhak Amzil</title>
+<meta name="description" content="Screens and video demos of Abdelhak Amzil's projects: Mall Privé, KARTUAPP, Kobor ERP and AI projects, shown with sample data.">
+<meta property="og:title" content="Project photos and videos — Abdelhak Amzil">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://abdelhakamzil.github.io/galerie.html">
+<link rel="alternate" hreflang="en" href="https://abdelhakamzil.github.io/galerie.html">
+<link rel="alternate" hreflang="fr" href="https://abdelhakamzil.github.io/fr/galerie.html">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310131A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%23ffffff'%3EAA%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,35 +17,36 @@
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<a class="saut" href="#contenu">Aller au contenu</a>
+<a class="saut" href="#contenu">Skip to content</a>
 
 <header class="entete">
   <div class="conteneur">
     <a class="logo" href="./">Abdelhak Amzil<span>.</span></a>
-    <nav class="nav" aria-label="Navigation principale">
-      <a href="./#projets">Projets</a>
-      <a href="mall-prive.html">Étude de cas</a>
-      <a class="bouton bouton--sombre" href="./#contact">Me contacter</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="./#work">Work</a>
+      <a href="mall-prive.html">Case study</a>
+      <a class="langue" href="fr/galerie.html" hreflang="fr" lang="fr">Français</a>
+      <a class="bouton bouton--sombre" href="./#contact">Get a quote</a>
     </nav>
   </div>
 </header>
 
 <main id="contenu" class="section">
   <div class="conteneur">
-    <h1 style="font-size: clamp(32px, 4.5vw, 44px); letter-spacing: -0.02em; margin-bottom: 8px">Photos et vidéos des projets</h1>
-    <p class="section__intro">Les écrans réels et des démonstrations courtes, toutes réalisées avec des données fictives.</p>
-    <p id="statut" class="texte" role="status">Chargement de la galerie…</p>
+    <h1 style="font-size: clamp(32px, 4.5vw, 44px); letter-spacing: -0.02em; margin-bottom: 8px">Project photos and videos</h1>
+    <p class="section__intro">Real screens and short demos, all made with sample data.</p>
+    <p id="statut" class="texte" role="status">Loading the gallery…</p>
 
     <div class="galerie-entete">
-      <div id="onglets" class="onglets" role="tablist" aria-label="Projets"></div>
-      <div id="types" class="types" role="group" aria-label="Type de média">
-        <button type="button" data-type="tous" aria-pressed="true">Tout</button>
+      <div id="onglets" class="onglets" role="tablist" aria-label="Projects"></div>
+      <div id="types" class="types" role="group" aria-label="Media type">
+        <button type="button" data-type="tous" aria-pressed="true">All</button>
         <button type="button" data-type="photo" aria-pressed="false">Photos</button>
-        <button type="button" data-type="video" aria-pressed="false">Vidéos</button>
+        <button type="button" data-type="video" aria-pressed="false">Videos</button>
       </div>
     </div>
 
-    <p id="vide" class="vide" hidden>Aucun média de ce type pour ce projet pour l'instant.</p>
+    <p id="vide" class="vide" hidden>No media of this type for this project yet.</p>
 
     <div id="lecteur" class="lecteur" hidden>
       <figure class="media">
@@ -55,20 +58,20 @@
       </figure>
       <div class="cote">
         <div class="cote__boutons">
-          <button id="precedent" type="button" class="bouton bouton--contour">Précédent</button>
-          <button id="suivant" type="button" class="bouton bouton--contour">Suivant</button>
+          <button id="precedent" type="button" class="bouton bouton--contour">Previous</button>
+          <button id="suivant" type="button" class="bouton bouton--contour">Next</button>
         </div>
-        <ul id="vignettes" class="vignettes" aria-label="Tous les médias du projet"></ul>
+        <ul id="vignettes" class="vignettes" aria-label="All media of the project"></ul>
       </div>
     </div>
-    <noscript><p class="texte">La galerie a besoin de JavaScript pour s'afficher.</p></noscript>
+    <noscript><p class="texte">The gallery needs JavaScript to be displayed.</p></noscript>
   </div>
 </main>
 
 <footer class="pied">
   <div class="conteneur">
-    <span>© 2026 Abdelhak Amzil · Maroc</span>
-    <a href="./">Retour à l'accueil</a>
+    <span>© 2026 Abdelhak Amzil · Casablanca, Morocco</span>
+    <a href="fr/galerie.html" hreflang="fr" lang="fr">Version française</a>
   </div>
 </footer>
 

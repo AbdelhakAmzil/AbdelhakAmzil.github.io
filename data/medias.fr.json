@@ -1,0 +1,123 @@
+{
+  "_aide": "type : photo ou video. Photo : image = chemin depuis la racine du site (assets/img/…). Vidéo : youtube = identifiant de la vidéo (non répertoriée), image = vignette facultative. Garder data/medias.en.json au même contenu, en anglais.",
+  "projets": [
+    {
+      "id": "mall-prive",
+      "nom": "Mall Privé",
+      "medias": [
+        {
+          "type": "video",
+          "titre": "Démo : de la commande à la livraison",
+          "legende": "Achat sur le site, réponse de la marque, pointage au hub et préparation du colis.",
+          "youtube": "",
+          "duree": "",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "Site client : fiche produit",
+          "legende": "Ventes privées par marque, quantités limitées par client.",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "Portail vendeur : colis à envoyer",
+          "legende": "La marque confirme l'envoi ou signale une indisponibilité.",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "Back-office : commandes par vente",
+          "legende": "Arrivée au hub, réception et bons de réception.",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "Bon de réception PDF",
+          "legende": "Généré au pointage, sans donnée personnelle du client.",
+          "image": ""
+        },
+        {
+          "type": "video",
+          "titre": "Démo : connexion avec double facteur",
+          "legende": "Espace équipe protégé par Keycloak et un code à 6 chiffres.",
+          "youtube": "",
+          "duree": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "kartuapp",
+      "nom": "KARTUAPP",
+      "medias": [
+        {
+          "type": "photo",
+          "titre": "Page de connexion",
+          "legende": "Application interne du plateau (avec l'accord de Kartu Group).",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "Ajustements des jours effectifs",
+          "legende": "Vue administrateur, données fictives.",
+          "image": ""
+        },
+        {
+          "type": "video",
+          "titre": "Démo : commentaire d'absence avec pièce jointe",
+          "legende": "Certificat joint, type de fichier vérifié par son contenu.",
+          "youtube": "",
+          "duree": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "kobor",
+      "nom": "Kobor ERP",
+      "medias": [
+        {
+          "type": "photo",
+          "titre": "Fiche camionnette et sinistres",
+          "legende": "Module Odoo sur mesure, données fictives.",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "PV de remise signé sur tablette",
+          "legende": "Remise et restitution des véhicules.",
+          "image": ""
+        },
+        {
+          "type": "video",
+          "titre": "Démo : intervention et contrôle croisé",
+          "legende": "Du dispatch au contrôle des interventions.",
+          "youtube": "",
+          "duree": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "ia",
+      "nom": "Projets IA",
+      "medias": [
+        {
+          "type": "video",
+          "titre": "Démo : IntelliRH",
+          "legende": "Assistant RH avec RAG et mémoire de conversation.",
+          "youtube": "",
+          "duree": "",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "Local RAG",
+          "legende": "Questions sur des documents, LLM local via Ollama.",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}

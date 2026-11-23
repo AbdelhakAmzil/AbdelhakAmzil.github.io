@@ -1,14 +1,16 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en" data-racine="">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Étude de cas Mall Privé — Abdelhak Amzil</title>
-<meta name="description" content="Mall Privé : plateforme marocaine de ventes privées réalisée en freelance. Site client, portail des marques, back-office, livraison Chrono Diali. Microservices Spring Boot, Angular, Kafka, Keycloak.">
-<meta property="og:title" content="Étude de cas Mall Privé — Abdelhak Amzil">
-<meta property="og:description" content="Des ventes privées de bout en bout, de la commande au colis livré.">
+<title>Mall Privé case study — Abdelhak Amzil</title>
+<meta name="description" content="Mall Privé: a Moroccan private-sales platform built as a freelancer. Customer site, brand portal, back-office and delivery with Chrono Diali. Spring Boot microservices, Angular, Kafka, Keycloak.">
+<meta property="og:title" content="Mall Privé case study — Abdelhak Amzil">
+<meta property="og:description" content="Private sales end to end, from the order to the delivered parcel.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://abdelhakamzil.github.io/mall-prive.html">
+<link rel="alternate" hreflang="en" href="https://abdelhakamzil.github.io/mall-prive.html">
+<link rel="alternate" hreflang="fr" href="https://abdelhakamzil.github.io/fr/mall-prive.html">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310131A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%23ffffff'%3EAA%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +18,16 @@
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<a class="saut" href="#contenu">Aller au contenu</a>
+<a class="saut" href="#contenu">Skip to content</a>
 
 <header class="entete">
   <div class="conteneur">
     <a class="logo" href="./">Abdelhak Amzil<span>.</span></a>
-    <nav class="nav" aria-label="Navigation principale">
-      <a href="./#projets">Projets</a>
-      <a href="galerie.html">Photos et vidéos</a>
-      <a class="bouton bouton--sombre" href="./#contact">Me contacter</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="./#work">Work</a>
+      <a href="galerie.html">Photos and videos</a>
+      <a class="langue" href="fr/mall-prive.html" hreflang="fr" lang="fr">Français</a>
+      <a class="bouton bouton--sombre" href="./#contact">Get a quote</a>
     </nav>
   </div>
 </header>
@@ -32,38 +35,38 @@
 <main id="contenu">
   <section class="etude-heros">
     <div class="conteneur">
-      <p class="surtitre">Étude de cas · Plateforme e-commerce · 2026</p>
-      <h1>Mall Privé : des ventes privées de bout en bout, de la commande au colis livré.</h1>
-      <p class="chapeau">Une plateforme marocaine qui réunit un site client, un portail pour les marques et un back-office pour l'équipe, avec paiement, préparation au hub et livraison par Chrono Diali.</p>
+      <p class="surtitre">Case study · E-commerce platform · 2026</p>
+      <h1>Mall Privé: private sales end to end, from the order to the delivered parcel.</h1>
+      <p class="chapeau">A Moroccan platform that brings together a customer website, a portal for brands and a back-office for the team, with payment, preparation at the hub and delivery by the Chrono Diali carrier.</p>
       <dl class="fiche">
-        <div><dt>Rôle</dt><dd>Ingénieur fullstack en freelance, de la conception à la livraison</dd></div>
-        <div><dt>Client</dt><dd>Start-up marocaine de ventes privées</dd></div>
-        <div><dt>Périmètre</dt><dd>Back-end, 3 front-ends, infrastructure</dd></div>
-        <div><dt>Statut</dt><dd>En cours de recette</dd></div>
+        <div><dt>Role</dt><dd>Freelance full-stack engineer, from design to delivery</dd></div>
+        <div><dt>Client</dt><dd>Moroccan private-sales startup</dd></div>
+        <div><dt>Scope</dt><dd>Back-end, 3 front-ends, infrastructure</dd></div>
+        <div><dt>Status</dt><dd>In acceptance testing</dd></div>
       </dl>
     </div>
   </section>
 
   <section class="grande-capture">
     <div class="conteneur">
-      <div class="visuel">Grande capture : page d'accueil du site client (données fictives)</div>
+      <div class="visuel">Large screenshot: customer site home page (sample data)</div>
     </div>
   </section>
 
   <section class="section">
     <div class="conteneur deux-colonnes">
       <div>
-        <h2>Le besoin</h2>
-        <p class="texte">Vendre en ligne, pendant quelques jours, les collections de marques partenaires à prix réduits. Il fallait gérer les paiements marocains (carte, paiement à la livraison), les commandes multi-marques, la réception des colis au hub, la livraison et le suivi, avec des données personnelles protégées selon la loi 09-08.</p>
+        <h2>The need</h2>
+        <p class="texte">Sell partner brands' collections online at reduced prices, for a few days at a time. The platform had to handle Moroccan payments (card and cash on delivery), multi-brand orders, receiving parcels at the hub, delivery and tracking, with personal data protected under Moroccan law 09-08.</p>
       </div>
       <div>
-        <h2>Ce que j'ai construit</h2>
+        <h2>What I built</h2>
         <ul>
-          <li>Une architecture en microservices Spring Boot reliés par Kafka</li>
-          <li>Trois applications Angular : site client, portail vendeur, back-office</li>
-          <li>Une connexion sécurisée Keycloak avec double facteur pour l'équipe</li>
-          <li>L'intégration du transporteur Chrono Diali (expédition, suivi, ramassage)</li>
-          <li>Les exports CSV et les documents PDF (bons de réception)</li>
+          <li>A Spring Boot microservices architecture connected by Kafka</li>
+          <li>Three Angular apps: customer site, vendor portal, back-office</li>
+          <li>Secure sign-in with Keycloak and two-factor authentication for the team</li>
+          <li>Integration of the Chrono Diali carrier (shipping, tracking, pickups)</li>
+          <li>CSV exports and PDF documents (receiving notes)</li>
         </ul>
       </div>
     </div>
@@ -71,40 +74,40 @@
 
   <section class="section">
     <div class="conteneur">
-      <h2>Le parcours d'une commande</h2>
-      <p class="section__intro">Chaque étape a son écran et sa trace dans l'historique.</p>
+      <h2>The life of an order</h2>
+      <p class="section__intro">Every step has its own screen and its own trace in the history.</p>
       <ol class="parcours-commande">
-        <li><span>1</span>Achat et paiement</li>
-        <li><span>2</span>Commande transmise à la marque</li>
-        <li><span>3</span>Réception et pointage au hub</li>
-        <li><span>4</span>Préparation du colis</li>
-        <li><span>5</span>Livraison Chrono Diali et suivi</li>
+        <li><span>1</span>Purchase and payment</li>
+        <li><span>2</span>Order sent to the brand</li>
+        <li><span>3</span>Receiving and check-in at the hub</li>
+        <li><span>4</span>Parcel preparation</li>
+        <li><span>5</span>Chrono Diali delivery and tracking</li>
       </ol>
     </div>
   </section>
 
   <section class="section">
     <div class="conteneur">
-      <h2>Les écrans</h2>
-      <p class="section__intro">Captures réalisées avec des données fictives. <a href="galerie.html">Voir toutes les photos et vidéos</a>.</p>
+      <h2>The screens</h2>
+      <p class="section__intro">Screenshots taken with sample data. <a href="galerie.html">See all photos and videos</a>.</p>
       <div class="ecrans">
-        <figure><div class="visuel">Capture : fiche produit</div><figcaption><strong>Site client</strong> — fiche produit, panier et paiement</figcaption></figure>
-        <figure><div class="visuel">Capture : colis à envoyer</div><figcaption><strong>Portail vendeur</strong> — commandes à envoyer et réponses de la marque</figcaption></figure>
-        <figure><div class="visuel">Capture : commandes par vente</div><figcaption><strong>Back-office</strong> — commandes, réception au hub, filtres et exports</figcaption></figure>
-        <figure><div class="visuel">Capture : bon de réception PDF</div><figcaption><strong>Documents</strong> — bon de réception généré en PDF</figcaption></figure>
+        <figure><div class="visuel">Screenshot: product page</div><figcaption><strong>Customer site</strong> — product page, cart and payment</figcaption></figure>
+        <figure><div class="visuel">Screenshot: parcels to ship</div><figcaption><strong>Vendor portal</strong> — orders to ship and brand responses</figcaption></figure>
+        <figure><div class="visuel">Screenshot: orders by sale</div><figcaption><strong>Back-office</strong> — orders, hub receiving, filters and exports</figcaption></figure>
+        <figure><div class="visuel">Screenshot: PDF receiving note</div><figcaption><strong>Documents</strong> — receiving note generated as a PDF</figcaption></figure>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="conteneur">
-      <h2>Choix techniques</h2>
-      <p class="section__intro">Des outils récents et stables, choisis pour durer.</p>
+      <h2>Technical choices</h2>
+      <p class="section__intro">Recent, stable tools, chosen to last.</p>
       <div class="choix">
-        <div><h3>Back-end</h3><p>Java 25, Spring Boot 4, PostgreSQL 18, Flyway. Événements Kafka publiés par outbox : aucun message perdu.</p></div>
-        <div><h3>Front-end</h3><p>Angular 22 avec signals, trois applications testées avec Vitest ; site client en français et en arabe.</p></div>
-        <div><h3>Sécurité</h3><p>Keycloak (3 espaces), BFF sans jeton côté navigateur, double facteur pour l'équipe, droits par rôle.</p></div>
-        <div><h3>Qualité</h3><p>Tests d'intégration avec Testcontainers, une branche par tâche, documentation tenue à jour.</p></div>
+        <div><h3>Back-end</h3><p>Java 25, Spring Boot 4, PostgreSQL 18, Flyway. Kafka events published through an outbox: no message is lost.</p></div>
+        <div><h3>Front-end</h3><p>Angular 22 with signals, three apps tested with Vitest; customer site in French and Arabic.</p></div>
+        <div><h3>Security</h3><p>Keycloak (3 realms), a BFF with no token in the browser, two-factor sign-in for the team, role-based access.</p></div>
+        <div><h3>Quality</h3><p>Integration tests with Testcontainers, one branch per task, documentation kept up to date.</p></div>
       </div>
     </div>
   </section>
@@ -113,10 +116,10 @@
     <div class="conteneur">
       <div class="appel">
         <div>
-          <h2>Un projet du même type ?</h2>
-          <p>Marketplace, back-office ou intégration de transporteur : parlons-en.</p>
+          <h2>Need something similar?</h2>
+          <p>Marketplace, back-office or carrier integration: let's talk about it.</p>
         </div>
-        <a class="bouton bouton--principal" href="./#contact">Me contacter</a>
+        <a class="bouton bouton--principal" href="./#contact">Get a free quote</a>
       </div>
     </div>
   </section>
@@ -124,8 +127,8 @@
 
 <footer class="pied">
   <div class="conteneur">
-    <span>© 2026 Abdelhak Amzil · Maroc</span>
-    <a href="./">Retour à l'accueil</a>
+    <span>© 2026 Abdelhak Amzil · Casablanca, Morocco</span>
+    <a href="fr/mall-prive.html" hreflang="fr" lang="fr">Version française</a>
   </div>
 </footer>
 </body>

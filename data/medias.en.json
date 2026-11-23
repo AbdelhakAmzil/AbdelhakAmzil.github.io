@@ -1,0 +1,123 @@
+{
+  "_aide": "type: photo or video. Photo: image = path from the site root (assets/img/…). Video: youtube = video ID (unlisted), image = optional thumbnail. Keep in sync with data/medias.fr.json.",
+  "projets": [
+    {
+      "id": "mall-prive",
+      "nom": "Mall Privé",
+      "medias": [
+        {
+          "type": "video",
+          "titre": "Demo: from order to delivery",
+          "legende": "Purchase on the site, brand response, check-in at the hub and parcel preparation.",
+          "youtube": "",
+          "duree": "",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "Customer site: product page",
+          "legende": "Private sales by brand, quantity limits per customer.",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "Vendor portal: parcels to ship",
+          "legende": "The brand confirms shipment or reports an item unavailable.",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "Back-office: orders by sale",
+          "legende": "Arrival at the hub, receiving and receiving notes.",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "PDF receiving note",
+          "legende": "Generated at check-in, with no customer personal data.",
+          "image": ""
+        },
+        {
+          "type": "video",
+          "titre": "Demo: two-factor sign-in",
+          "legende": "Team area protected by Keycloak and a 6-digit code.",
+          "youtube": "",
+          "duree": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "kartuapp",
+      "nom": "KARTUAPP",
+      "medias": [
+        {
+          "type": "photo",
+          "titre": "Sign-in page",
+          "legende": "Internal call-center app (with Kartu Group's approval).",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "Working-day adjustments",
+          "legende": "Admin view, sample data.",
+          "image": ""
+        },
+        {
+          "type": "video",
+          "titre": "Demo: absence comment with attachment",
+          "legende": "Certificate attached, file type checked from its content.",
+          "youtube": "",
+          "duree": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "kobor",
+      "nom": "Kobor ERP",
+      "medias": [
+        {
+          "type": "photo",
+          "titre": "Van record and claims",
+          "legende": "Custom Odoo module, sample data.",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "Handover report signed on a tablet",
+          "legende": "Vehicle handover and return.",
+          "image": ""
+        },
+        {
+          "type": "video",
+          "titre": "Demo: intervention and cross-check",
+          "legende": "From dispatch to intervention checks.",
+          "youtube": "",
+          "duree": "",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "ia",
+      "nom": "AI projects",
+      "medias": [
+        {
+          "type": "video",
+          "titre": "Demo: IntelliRH",
+          "legende": "HR assistant with RAG and conversation memory.",
+          "youtube": "",
+          "duree": "",
+          "image": ""
+        },
+        {
+          "type": "photo",
+          "titre": "Local RAG",
+          "legende": "Questions on documents, local LLM through Ollama.",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}

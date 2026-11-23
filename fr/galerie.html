@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr" data-racine="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photos et vidéos des projets — Abdelhak Amzil</title>
+<meta name="description" content="Écrans et démonstrations vidéo des projets d'Abdelhak Amzil : Mall Privé, KARTUAPP, Kobor ERP et projets d'IA, avec des données fictives.">
+<meta property="og:title" content="Photos et vidéos des projets — Abdelhak Amzil">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://abdelhakamzil.github.io/fr/galerie.html">
+<link rel="alternate" hreflang="en" href="https://abdelhakamzil.github.io/galerie.html">
+<link rel="alternate" hreflang="fr" href="https://abdelhakamzil.github.io/fr/galerie.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310131A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%23ffffff'%3EAA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="saut" href="#contenu">Aller au contenu</a>
+
+<header class="entete">
+  <div class="conteneur">
+    <a class="logo" href="./">Abdelhak Amzil<span>.</span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="./#realisations">Projets</a>
+      <a href="mall-prive.html">Étude de cas</a>
+      <a class="langue" href="../galerie.html" hreflang="en" lang="en">English</a>
+      <a class="bouton bouton--sombre" href="./#contact">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu" class="section">
+  <div class="conteneur">
+    <h1 style="font-size: clamp(32px, 4.5vw, 44px); letter-spacing: -0.02em; margin-bottom: 8px">Photos et vidéos des projets</h1>
+    <p class="section__intro">Les écrans réels et des démonstrations courtes, toutes réalisées avec des données fictives.</p>
+    <p id="statut" class="texte" role="status">Chargement de la galerie…</p>
+
+    <div class="galerie-entete">
+      <div id="onglets" class="onglets" role="tablist" aria-label="Projets"></div>
+      <div id="types" class="types" role="group" aria-label="Type de média">
+        <button type="button" data-type="tous" aria-pressed="true">Tout</button>
+        <button type="button" data-type="photo" aria-pressed="false">Photos</button>
+        <button type="button" data-type="video" aria-pressed="false">Vidéos</button>
+      </div>
+    </div>
+
+    <p id="vide" class="vide" hidden>Aucun média de ce type pour ce projet pour l'instant.</p>
+
+    <div id="lecteur" class="lecteur" hidden>
+      <figure class="media">
+        <div id="ecran" class="ecran"></div>
+        <figcaption>
+          <div><strong id="titre-media"></strong><p id="legende-media"></p></div>
+          <span id="position" class="position" aria-live="polite"></span>
+        </figcaption>
+      </figure>
+      <div class="cote">
+        <div class="cote__boutons">
+          <button id="precedent" type="button" class="bouton bouton--contour">Précédent</button>
+          <button id="suivant" type="button" class="bouton bouton--contour">Suivant</button>
+        </div>
+        <ul id="vignettes" class="vignettes" aria-label="Tous les médias du projet"></ul>
+      </div>
+    </div>
+    <noscript><p class="texte">La galerie a besoin de JavaScript pour s'afficher.</p></noscript>
+  </div>
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <span>© 2026 Abdelhak Amzil · Maroc</span>
+    <a href="../galerie.html" hreflang="en" lang="en">English version</a>
+  </div>
+</footer>
+
+<script src="../assets/js/galerie.js" defer></script>
+</body>
+</html>
