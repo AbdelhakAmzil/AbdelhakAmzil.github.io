@@ -129,15 +129,21 @@
       "medias": [
         {
           "type": "photo",
-          "titre": "Sign-in page",
-          "legende": "Internal call-center app (with Kartu Group's approval).",
-          "image": ""
+          "titre": "Working-day adjustments",
+          "legende": "Late arrivals, breaks, absence with an attached certificate, public holiday. Mockup, sample data.",
+          "image": "assets/img/maquettes/01-nova-ajustements.webp"
         },
         {
           "type": "photo",
-          "titre": "Working-day adjustments",
-          "legende": "Admin view, sample data.",
-          "image": ""
+          "titre": "Live floor supervision",
+          "legende": "Agents on calls, on break, or late against today's schedule. Mockup, sample data.",
+          "image": "assets/img/maquettes/02-nova-supervision.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Monthly attendance bonus",
+          "legende": "Every scheduled day checked; failing days to adjust or justify. Mockup, sample data.",
+          "image": "assets/img/maquettes/03-nova-prime-presence.webp"
         },
         {
           "type": "video",
@@ -155,15 +161,21 @@
       "medias": [
         {
           "type": "photo",
-          "titre": "Van record and claims",
-          "legende": "Custom Odoo module, sample data.",
-          "image": ""
+          "titre": "Van record",
+          "legende": "Car policy, fuel card, GPS, driver history. Odoo mockup, sample data.",
+          "image": "assets/img/maquettes/04-atlas-camionnette.webp"
         },
         {
           "type": "photo",
           "titre": "Handover report signed on a tablet",
-          "legende": "Vehicle handover and return.",
-          "image": ""
+          "legende": "Vehicle check, finger signature, locked PDF. Mockup, sample data.",
+          "image": "assets/img/maquettes/05-atlas-pv-signature.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Technician output",
+          "legende": "Monthly ranking and working days, no end-customer data. Mockup, sample data.",
+          "image": "assets/img/maquettes/06-atlas-production.webp"
         },
         {
           "type": "video",

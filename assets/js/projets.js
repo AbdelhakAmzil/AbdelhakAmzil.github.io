@@ -6,11 +6,11 @@
   const racine = document.documentElement.dataset.racine || '';
   const fr = document.documentElement.lang.startsWith('fr');
   const T = fr ? {
-    etude: "Lire l'étude de cas", code: 'Voir le code', codeDe: 'Voir le code de ', capture: 'Capture de ',
+    etude: "Lire l'étude de cas", code: 'Voir le code', codeDe: 'Voir le code de ', capture: 'Maquette de ',
     technos: 'Technologies', echec: 'Les projets ne se sont pas chargés. Retrouvez-les sur GitHub.',
     sujet: 'Demande de projet — ', visiteur: 'un visiteur'
   } : {
-    etude: 'Read the case study', code: 'View code', codeDe: 'View the code of ', capture: 'Screenshot of ',
+    etude: 'Read the case study', code: 'View code', codeDe: 'View the code of ', capture: 'Mockup of ',
     technos: 'Technologies', echec: 'Projects could not be loaded. You can find them on GitHub.',
     sujet: 'Project request — ', visiteur: 'a visitor'
   };

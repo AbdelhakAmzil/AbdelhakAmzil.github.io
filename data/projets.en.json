@@ -27,8 +27,8 @@
         "AWS EC2 · RDS",
         "344 tests"
       ],
-      "image": "",
-      "texteImage": "KARTUAPP screenshot (with Kartu Group's approval)"
+      "image": "assets/img/maquettes/01-nova-ajustements.webp",
+      "texteImage": "Mockup based on KARTUAPP: sample company and data"
     },
     {
       "id": "kobor",
@@ -41,8 +41,8 @@
         "17 modules",
         "149 tests"
       ],
-      "image": "",
-      "texteImage": "Custom Odoo module screenshot (sample data, with Kobor's approval)"
+      "image": "assets/img/maquettes/04-atlas-camionnette.webp",
+      "texteImage": "Mockup based on Kobor ERP (Odoo): sample company and data"
     }
   ],
   "personnels": [

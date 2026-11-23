@@ -129,15 +129,21 @@
       "medias": [
         {
           "type": "photo",
-          "titre": "Page de connexion",
-          "legende": "Application interne du plateau (avec l'accord de Kartu Group).",
-          "image": ""
+          "titre": "Ajustements des jours effectifs",
+          "legende": "Retards, pauses, absence avec certificat joint, jour férié. Maquette, données fictives.",
+          "image": "assets/img/maquettes/01-nova-ajustements.webp"
         },
         {
           "type": "photo",
-          "titre": "Ajustements des jours effectifs",
-          "legende": "Vue administrateur, données fictives.",
-          "image": ""
+          "titre": "Supervision du plateau en direct",
+          "legende": "Production, pauses et retards par rapport au planning. Maquette, données fictives.",
+          "image": "assets/img/maquettes/02-nova-supervision.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Prime de présence du mois",
+          "legende": "Chaque jour planifié contrôlé, jours KO à ajuster ou justifier. Maquette, données fictives.",
+          "image": "assets/img/maquettes/03-nova-prime-presence.webp"
         },
         {
           "type": "video",
@@ -155,15 +161,21 @@
       "medias": [
         {
           "type": "photo",
-          "titre": "Fiche camionnette et sinistres",
-          "legende": "Module Odoo sur mesure, données fictives.",
-          "image": ""
+          "titre": "Fiche camionnette",
+          "legende": "Car policy, carte carburant, GPS, historique des conducteurs. Maquette Odoo, données fictives.",
+          "image": "assets/img/maquettes/04-atlas-camionnette.webp"
         },
         {
           "type": "photo",
           "titre": "PV de remise signé sur tablette",
-          "legende": "Remise et restitution des véhicules.",
-          "image": ""
+          "legende": "État des lieux, signature au doigt, PDF verrouillé. Maquette, données fictives.",
+          "image": "assets/img/maquettes/05-atlas-pv-signature.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Production des techniciens",
+          "legende": "Classement du mois et journées, sans donnée de client final. Maquette, données fictives.",
+          "image": "assets/img/maquettes/06-atlas-production.webp"
         },
         {
           "type": "video",
