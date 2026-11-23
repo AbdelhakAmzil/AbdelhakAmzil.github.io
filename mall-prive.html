@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Étude de cas Mall Privé — Abdelhak Amzil</title>
+<meta name="description" content="Mall Privé : plateforme marocaine de ventes privées réalisée en freelance. Site client, portail des marques, back-office, livraison Chrono Diali. Microservices Spring Boot, Angular, Kafka, Keycloak.">
+<meta property="og:title" content="Étude de cas Mall Privé — Abdelhak Amzil">
+<meta property="og:description" content="Des ventes privées de bout en bout, de la commande au colis livré.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://abdelhakamzil.github.io/mall-prive.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310131A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%23ffffff'%3EAA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="saut" href="#contenu">Aller au contenu</a>
+
+<header class="entete">
+  <div class="conteneur">
+    <a class="logo" href="./">Abdelhak Amzil<span>.</span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="./#projets">Projets</a>
+      <a href="galerie.html">Photos et vidéos</a>
+      <a class="bouton bouton--sombre" href="./#contact">Me contacter</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="etude-heros">
+    <div class="conteneur">
+      <p class="surtitre">Étude de cas · Plateforme e-commerce · 2026</p>
+      <h1>Mall Privé : des ventes privées de bout en bout, de la commande au colis livré.</h1>
+      <p class="chapeau">Une plateforme marocaine qui réunit un site client, un portail pour les marques et un back-office pour l'équipe, avec paiement, préparation au hub et livraison par Chrono Diali.</p>
+      <dl class="fiche">
+        <div><dt>Rôle</dt><dd>Ingénieur fullstack en freelance, de la conception à la livraison</dd></div>
+        <div><dt>Client</dt><dd>Start-up marocaine de ventes privées</dd></div>
+        <div><dt>Périmètre</dt><dd>Back-end, 3 front-ends, infrastructure</dd></div>
+        <div><dt>Statut</dt><dd>En cours de recette</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="grande-capture">
+    <div class="conteneur">
+      <div class="visuel">Grande capture : page d'accueil du site client (données fictives)</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur deux-colonnes">
+      <div>
+        <h2>Le besoin</h2>
+        <p class="texte">Vendre en ligne, pendant quelques jours, les collections de marques partenaires à prix réduits. Il fallait gérer les paiements marocains (carte, paiement à la livraison), les commandes multi-marques, la réception des colis au hub, la livraison et le suivi, avec des données personnelles protégées selon la loi 09-08.</p>
+      </div>
+      <div>
+        <h2>Ce que j'ai construit</h2>
+        <ul>
+          <li>Une architecture en microservices Spring Boot reliés par Kafka</li>
+          <li>Trois applications Angular : site client, portail vendeur, back-office</li>
+          <li>Une connexion sécurisée Keycloak avec double facteur pour l'équipe</li>
+          <li>L'intégration du transporteur Chrono Diali (expédition, suivi, ramassage)</li>
+          <li>Les exports CSV et les documents PDF (bons de réception)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur">
+      <h2>Le parcours d'une commande</h2>
+      <p class="section__intro">Chaque étape a son écran et sa trace dans l'historique.</p>
+      <ol class="parcours-commande">
+        <li><span>1</span>Achat et paiement</li>
+        <li><span>2</span>Commande transmise à la marque</li>
+        <li><span>3</span>Réception et pointage au hub</li>
+        <li><span>4</span>Préparation du colis</li>
+        <li><span>5</span>Livraison Chrono Diali et suivi</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur">
+      <h2>Les écrans</h2>
+      <p class="section__intro">Captures réalisées avec des données fictives. <a href="galerie.html">Voir toutes les photos et vidéos</a>.</p>
+      <div class="ecrans">
+        <figure><div class="visuel">Capture : fiche produit</div><figcaption><strong>Site client</strong> — fiche produit, panier et paiement</figcaption></figure>
+        <figure><div class="visuel">Capture : colis à envoyer</div><figcaption><strong>Portail vendeur</strong> — commandes à envoyer et réponses de la marque</figcaption></figure>
+        <figure><div class="visuel">Capture : commandes par vente</div><figcaption><strong>Back-office</strong> — commandes, réception au hub, filtres et exports</figcaption></figure>
+        <figure><div class="visuel">Capture : bon de réception PDF</div><figcaption><strong>Documents</strong> — bon de réception généré en PDF</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur">
+      <h2>Choix techniques</h2>
+      <p class="section__intro">Des outils récents et stables, choisis pour durer.</p>
+      <div class="choix">
+        <div><h3>Back-end</h3><p>Java 25, Spring Boot 4, PostgreSQL 18, Flyway. Événements Kafka publiés par outbox : aucun message perdu.</p></div>
+        <div><h3>Front-end</h3><p>Angular 22 avec signals, trois applications testées avec Vitest ; site client en français et en arabe.</p></div>
+        <div><h3>Sécurité</h3><p>Keycloak (3 espaces), BFF sans jeton côté navigateur, double facteur pour l'équipe, droits par rôle.</p></div>
+        <div><h3>Qualité</h3><p>Tests d'intégration avec Testcontainers, une branche par tâche, documentation tenue à jour.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="conteneur">
+      <div class="appel">
+        <div>
+          <h2>Un projet du même type ?</h2>
+          <p>Marketplace, back-office ou intégration de transporteur : parlons-en.</p>
+        </div>
+        <a class="bouton bouton--principal" href="./#contact">Me contacter</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <span>© 2026 Abdelhak Amzil · Maroc</span>
+    <a href="./">Retour à l'accueil</a>
+  </div>
+</footer>
+</body>
+</html>
