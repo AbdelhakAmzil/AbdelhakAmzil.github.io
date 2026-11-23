@@ -1,0 +1,120 @@
+{
+  "phare": {
+    "id": "mall-prive",
+    "titre": "Mall Privé",
+    "etiquette": "Projet phare · Freelance · 2026",
+    "resume": "Plateforme marocaine de ventes privées : site client, portail des marques et back-office, du paiement à la livraison par Chrono Diali.",
+    "technos": [
+      "Spring Boot 4",
+      "Angular 22",
+      "Kafka",
+      "Keycloak",
+      "PostgreSQL 18"
+    ],
+    "image": "",
+    "texteImage": "Galerie : site client, portail vendeur, back-office, bon de réception PDF",
+    "lien": "mall-prive.html"
+  },
+  "entreprise": [
+    {
+      "id": "kartuapp",
+      "titre": "KARTUAPP",
+      "etiquette": "Application interne · en production",
+      "resume": "Application du plateau d'appels, utilisée chaque jour : pointage, plannings, congés, prime de présence. J'y livre les évolutions, corrige les incidents et encadre les mises en production (sauvegarde relue, migrations versionnées, retour arrière prêt).",
+      "technos": [
+        "Spring Boot 3",
+        "Spring Security",
+        "AWS EC2 · RDS",
+        "344 tests"
+      ],
+      "image": "",
+      "texteImage": "Capture de KARTUAPP (avec l'accord de Kartu Group)"
+    },
+    {
+      "id": "kobor",
+      "titre": "Kobor ERP",
+      "etiquette": "ERP · Odoo 19 Community",
+      "resume": "ERP d'une société de techniciens de terrain : personnel, véhicules et sinistres, outillage, interventions, sous-traitants, GPS, export RGPD. Serveur Docker chez OVH, sauvegardes quotidiennes, reprise des données sans doublon.",
+      "technos": [
+        "Odoo 19",
+        "Python",
+        "17 modules",
+        "149 tests"
+      ],
+      "image": "",
+      "texteImage": "Capture d'un module Odoo (données fictives, avec l'accord de Kobor)"
+    }
+  ],
+  "personnels": [
+    {
+      "titre": "IntelliRH",
+      "categorie": "IA",
+      "langage": "Java",
+      "resume": "Assistant RH intelligent : agent avec chaîne RAG et mémoire de conversation (Spring AI, Ollama, pgvector, Angular).",
+      "lien": "https://github.com/AbdelhakAmzil"
+    },
+    {
+      "titre": "E-Commerce Microservices",
+      "categorie": "Fullstack",
+      "langage": "Java",
+      "resume": "Architecture distribuée : passerelle API, services découplés, Keycloak, Kafka et Docker.",
+      "lien": "https://github.com/AbdelhakAmzil"
+    },
+    {
+      "titre": "gestion-de-stock-api",
+      "categorie": "Fullstack",
+      "langage": "Java",
+      "resume": "API REST de gestion de stock en Spring Boot : inventaire, opérations CRUD et règles métier.",
+      "lien": "https://github.com/AbdelhakAmzil/gestion-de-stock-api"
+    },
+    {
+      "titre": "gestion-de-stock-frontend",
+      "categorie": "Fullstack",
+      "langage": "TypeScript",
+      "resume": "Interface Angular du système de stock, branchée sur l'API.",
+      "lien": "https://github.com/AbdelhakAmzil/gestion-de-stock-frontend"
+    },
+    {
+      "titre": "e-commerce-app",
+      "categorie": "Fullstack",
+      "langage": "Java",
+      "resume": "Application e-commerce : produits, commandes, utilisateurs et paiement.",
+      "lien": "https://github.com/AbdelhakAmzil/e-commerce-app"
+    },
+    {
+      "titre": "local-rag",
+      "categorie": "IA",
+      "langage": "Python",
+      "resume": "Chaîne RAG locale avec Ollama et une base vectorielle, sans connexion internet.",
+      "lien": "https://github.com/AbdelhakAmzil/local-rag"
+    },
+    {
+      "titre": "chatbot-PubMedBERT",
+      "categorie": "IA",
+      "langage": "Python",
+      "resume": "Assistant médical qui répond à partir de la littérature scientifique (PubMedBERT).",
+      "lien": "https://github.com/AbdelhakAmzil/chatbot-PubMedBERT"
+    },
+    {
+      "titre": "HydroTrack-AI-API",
+      "categorie": "IA",
+      "langage": "Python",
+      "resume": "API de suivi d'hydratation avec des recommandations par apprentissage automatique.",
+      "lien": "https://github.com/AbdelhakAmzil/HydroTrack-AI-API"
+    },
+    {
+      "titre": "churn-analysis",
+      "categorie": "Data",
+      "langage": "T-SQL",
+      "resume": "Analyse de l'attrition client : repérage des clients à risque en SQL.",
+      "lien": "https://github.com/AbdelhakAmzil/churn-analysis"
+    },
+    {
+      "titre": "Flight & Price Trend Analysis",
+      "categorie": "Data",
+      "langage": "Python",
+      "resume": "Analyse des tendances et de la saisonnalité des prix des billets d'avion.",
+      "lien": "https://github.com/AbdelhakAmzil/Flight-and-Price-Trend-Analysis"
+    }
+  ]
+}
