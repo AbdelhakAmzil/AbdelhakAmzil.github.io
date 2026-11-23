@@ -1,6 +1,19 @@
-// Accueil : projets lus depuis data/projets.json (mettre à jour ce fichier suffit), filtres et formulaire de contact.
+// Accueil (anglais à la racine, français dans /fr/) : projets lus depuis data/projets.<langue>.json, filtres, contact.
+// Mettre à jour les projets = modifier ces fichiers ; chemins d'images et de liens relatifs à la racine du site.
 (function () {
   'use strict';
+
+  const racine = document.documentElement.dataset.racine || '';
+  const fr = document.documentElement.lang.startsWith('fr');
+  const T = fr ? {
+    etude: "Lire l'étude de cas", code: 'Voir le code', codeDe: 'Voir le code de ', capture: 'Capture de ',
+    technos: 'Technologies', echec: 'Les projets ne se sont pas chargés. Retrouvez-les sur GitHub.',
+    sujet: 'Demande de projet — ', visiteur: 'un visiteur'
+  } : {
+    etude: 'Read the case study', code: 'View code', codeDe: 'View the code of ', capture: 'Screenshot of ',
+    technos: 'Technologies', echec: 'Projects could not be loaded. You can find them on GitHub.',
+    sujet: 'Project request — ', visiteur: 'a visitor'
+  };
 
   function el(tag, attrs, enfants) {
     const n = document.createElement(tag);
@@ -11,34 +24,36 @@
     return n;
   }
 
+  const chemin = (c) => (!c || /^https?:/.test(c) ? c : racine + c);
+
   /** Capture si l'image existe, sinon emplacement gris avec sa description. */
   function visuel(image, texte, alt) {
     if (image) {
-      return el('div', { class: 'visuel visuel--image' }, [el('img', { src: image, alt: alt, loading: 'lazy' })]);
+      return el('div', { class: 'visuel visuel--image' }, [el('img', { src: chemin(image), alt: alt, loading: 'lazy' })]);
     }
     return el('div', { class: 'visuel', texte: texte });
   }
 
   function etiquettes(liste) {
-    return el('ul', { class: 'etiquettes', 'aria-label': 'Technologies' }, liste.map((t) => el('li', { texte: t })));
+    return el('ul', { class: 'etiquettes', 'aria-label': T.technos }, liste.map((t) => el('li', { texte: t })));
   }
 
   function projetPhare(p) {
     return el('article', { class: 'projet-phare' }, [
-      visuel(p.image, p.texteImage, 'Capture de ' + p.titre),
+      visuel(p.image, p.texteImage, T.capture + p.titre),
       el('div', { class: 'projet-phare__texte' }, [
         el('p', { class: 'surtitre', texte: p.etiquette }),
         el('h3', { texte: p.titre }),
         el('p', { class: 'texte', texte: p.resume }),
         etiquettes(p.technos),
-        el('a', { class: 'bouton bouton--principal', href: p.lien, texte: "Lire l'étude de cas" })
+        el('a', { class: 'bouton bouton--principal', href: chemin(p.lien), texte: T.etude })
       ])
     ]);
   }
 
   function projetEntreprise(p) {
     return el('article', { class: 'projet-entreprise' }, [
-      visuel(p.image, p.texteImage, 'Capture de ' + p.titre),
+      visuel(p.image, p.texteImage, T.capture + p.titre),
       el('div', { class: 'projet-entreprise__texte' }, [
         el('p', { class: 'meta', texte: p.etiquette }),
         el('h4', { texte: p.titre }),
@@ -50,10 +65,10 @@
 
   function projetPersonnel(p) {
     return el('article', { class: 'projet' }, [
-      el('p', { class: 'meta', texte: p.categorie + ' · ' + p.langage }),
+      el('p', { class: 'meta', texte: (p.libelleCategorie || p.categorie) + ' · ' + p.langage }),
       el('h4', { texte: p.titre }),
       el('p', { texte: p.resume }),
-      el('a', { href: p.lien, rel: 'noopener', texte: 'Voir le code', 'aria-label': 'Voir le code de ' + p.titre })
+      el('a', { href: p.lien, rel: 'noopener', texte: T.code, 'aria-label': T.codeDe + p.titre })
     ]);
   }
 
@@ -65,7 +80,7 @@
   async function chargerProjets() {
     const statut = document.getElementById('projets-statut');
     try {
-      const reponse = await fetch('data/projets.json', { cache: 'no-cache' });
+      const reponse = await fetch(racine + 'data/projets.' + (fr ? 'fr' : 'en') + '.json', { cache: 'no-cache' });
       if (!reponse.ok) { throw new Error(String(reponse.status)); }
       const d = await reponse.json();
       document.getElementById('projet-phare').replaceChildren(projetPhare(d.phare));
@@ -79,7 +94,7 @@
       });
       statut.textContent = '';
     } catch (e) {
-      statut.textContent = 'Les projets ne se sont pas chargés. Retrouvez-les sur GitHub.';
+      statut.textContent = T.echec;
     }
   }
 
@@ -91,10 +106,11 @@
       evenement.preventDefault();
       const nom = f.elements.nom.value.trim();
       const besoin = f.elements.message.value.trim();
-      const sujet = 'Portfolio — message de ' + (nom || 'un visiteur');
-      const corps = besoin + '\n\n' + nom + (f.elements.courriel.value.trim() ? ' — ' + f.elements.courriel.value.trim() : '');
-      window.location.href = 'mailto:abdelhakamzil.2000@gmail.com?subject=' + encodeURIComponent(sujet)
-        + '&body=' + encodeURIComponent(corps);
+      const type = f.elements.type ? f.elements.type.value : '';
+      const corps = (type ? type + '\n\n' : '') + besoin + '\n\n' + nom
+        + (f.elements.courriel.value.trim() ? ' — ' + f.elements.courriel.value.trim() : '');
+      window.location.href = 'mailto:abdelhakamzil.2000@gmail.com?subject='
+        + encodeURIComponent(T.sujet + (nom || T.visiteur)) + '&body=' + encodeURIComponent(corps);
     });
   }
 

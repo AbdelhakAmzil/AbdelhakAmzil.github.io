@@ -1,0 +1,130 @@
+{
+  "phare": {
+    "id": "mall-prive",
+    "titre": "Mall Privé",
+    "etiquette": "Featured project · Freelance · 2026",
+    "resume": "A Moroccan private-sales platform: customer website, brand portal and back-office, from payment to delivery with the Chrono Diali carrier.",
+    "technos": [
+      "Spring Boot 4",
+      "Angular 22",
+      "Kafka",
+      "Keycloak",
+      "PostgreSQL 18"
+    ],
+    "image": "",
+    "texteImage": "Gallery: customer site, vendor portal, back-office, PDF receiving note",
+    "lien": "mall-prive.html"
+  },
+  "entreprise": [
+    {
+      "id": "kartuapp",
+      "titre": "KARTUAPP",
+      "etiquette": "Internal web app · in production",
+      "resume": "Daily-used app for a call-center floor: time tracking, schedules, leave and attendance bonus. I ship new features, fix production incidents and run safe releases (verified backup, versioned migrations, ready rollback).",
+      "technos": [
+        "Spring Boot 3",
+        "Spring Security",
+        "AWS EC2 · RDS",
+        "344 tests"
+      ],
+      "image": "",
+      "texteImage": "KARTUAPP screenshot (with Kartu Group's approval)"
+    },
+    {
+      "id": "kobor",
+      "titre": "Kobor ERP",
+      "etiquette": "ERP · Odoo 19 Community",
+      "resume": "ERP for a field-technician company: staff, vans and claims, tools, interventions, subcontractors, GPS, GDPR export. Docker server at OVH, daily backups, duplicate-free data migration.",
+      "technos": [
+        "Odoo 19",
+        "Python",
+        "17 modules",
+        "149 tests"
+      ],
+      "image": "",
+      "texteImage": "Custom Odoo module screenshot (sample data, with Kobor's approval)"
+    }
+  ],
+  "personnels": [
+    {
+      "titre": "IntelliRH",
+      "categorie": "IA",
+      "langage": "Java",
+      "resume": "Smart HR assistant: an AI agent with a RAG pipeline and conversation memory (Spring AI, Ollama, pgvector, Angular).",
+      "lien": "https://github.com/AbdelhakAmzil",
+      "libelleCategorie": "AI"
+    },
+    {
+      "titre": "E-Commerce Microservices",
+      "categorie": "Fullstack",
+      "langage": "Java",
+      "resume": "Distributed architecture: API gateway, decoupled services, Keycloak, Kafka and Docker.",
+      "lien": "https://github.com/AbdelhakAmzil",
+      "libelleCategorie": "Full-stack"
+    },
+    {
+      "titre": "gestion-de-stock-api",
+      "categorie": "Fullstack",
+      "langage": "Java",
+      "resume": "Inventory management REST API in Spring Boot: stock tracking, CRUD operations and business rules.",
+      "lien": "https://github.com/AbdelhakAmzil/gestion-de-stock-api",
+      "libelleCategorie": "Full-stack"
+    },
+    {
+      "titre": "gestion-de-stock-frontend",
+      "categorie": "Fullstack",
+      "langage": "TypeScript",
+      "resume": "Angular front-end for the inventory system, connected to the API.",
+      "lien": "https://github.com/AbdelhakAmzil/gestion-de-stock-frontend",
+      "libelleCategorie": "Full-stack"
+    },
+    {
+      "titre": "e-commerce-app",
+      "categorie": "Fullstack",
+      "langage": "Java",
+      "resume": "E-commerce application: products, orders, users and payment.",
+      "lien": "https://github.com/AbdelhakAmzil/e-commerce-app",
+      "libelleCategorie": "Full-stack"
+    },
+    {
+      "titre": "local-rag",
+      "categorie": "IA",
+      "langage": "Python",
+      "resume": "Local RAG pipeline with Ollama and a vector store, fully offline.",
+      "lien": "https://github.com/AbdelhakAmzil/local-rag",
+      "libelleCategorie": "AI"
+    },
+    {
+      "titre": "chatbot-PubMedBERT",
+      "categorie": "IA",
+      "langage": "Python",
+      "resume": "Medical assistant answering from scientific literature (PubMedBERT).",
+      "lien": "https://github.com/AbdelhakAmzil/chatbot-PubMedBERT",
+      "libelleCategorie": "AI"
+    },
+    {
+      "titre": "HydroTrack-AI-API",
+      "categorie": "IA",
+      "langage": "Python",
+      "resume": "Hydration tracking API with machine-learning recommendations.",
+      "lien": "https://github.com/AbdelhakAmzil/HydroTrack-AI-API",
+      "libelleCategorie": "AI"
+    },
+    {
+      "titre": "churn-analysis",
+      "categorie": "Data",
+      "langage": "T-SQL",
+      "resume": "Customer churn analysis: spotting at-risk customers with SQL.",
+      "lien": "https://github.com/AbdelhakAmzil/churn-analysis",
+      "libelleCategorie": "Data"
+    },
+    {
+      "titre": "Flight & Price Trend Analysis",
+      "categorie": "Data",
+      "langage": "Python",
+      "resume": "Analysis of airfare trends and seasonality.",
+      "lien": "https://github.com/AbdelhakAmzil/Flight-and-Price-Trend-Analysis",
+      "libelleCategorie": "Data"
+    }
+  ]
+}

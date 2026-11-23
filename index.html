@@ -1,14 +1,16 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en" data-racine="">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Abdelhak Amzil — Ingénieur fullstack et IA</title>
-<meta name="description" content="Ingénieur en développement applicatif et IA à Casablanca : plateformes web Java / Spring Boot et Angular, ERP Odoo, intégration de LLM et RAG. Projets, parcours et contact.">
-<meta property="og:title" content="Abdelhak Amzil — Ingénieur fullstack et IA">
-<meta property="og:description" content="Je conçois et livre des plateformes web complètes, de l'API à l'écran.">
+<title>Abdelhak Amzil — Freelance full-stack developer (web apps, e-commerce, Odoo, AI)</title>
+<meta name="description" content="Freelance full-stack developer based in Morocco. Online stores, custom web apps and back-offices, Odoo ERP, AI assistants and integrations for shops, startups and companies. Free quote within 48 hours.">
+<meta property="og:title" content="Abdelhak Amzil — Freelance full-stack developer">
+<meta property="og:description" content="I build online stores, business web apps and AI assistants that help your company grow.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://abdelhakamzil.github.io/">
+<link rel="alternate" hreflang="en" href="https://abdelhakamzil.github.io/">
+<link rel="alternate" hreflang="fr" href="https://abdelhakamzil.github.io/fr/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310131A'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%23ffffff'%3EAA%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,17 +18,18 @@
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<a class="saut" href="#contenu">Aller au contenu</a>
+<a class="saut" href="#contenu">Skip to content</a>
 
 <header class="entete">
   <div class="conteneur">
     <a class="logo" href="./">Abdelhak Amzil<span>.</span></a>
-    <nav class="nav" aria-label="Navigation principale">
-      <a href="#projets">Projets</a>
-      <a href="galerie.html">Photos et vidéos</a>
+    <nav class="nav" aria-label="Main navigation">
       <a href="#services">Services</a>
-      <a href="#parcours">Parcours</a>
-      <a class="bouton bouton--sombre" href="#contact">Me contacter</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+      <a class="langue" href="fr/" hreflang="fr" lang="fr">Français</a>
+      <a class="bouton bouton--sombre" href="#contact">Get a quote</a>
     </nav>
   </div>
 </header>
@@ -35,107 +38,171 @@
   <section class="heros">
     <div class="conteneur">
       <div class="heros__texte">
-        <p class="badge">Ouvert aux opportunités · Casablanca</p>
-        <h1>Je conçois et livre des plateformes web complètes, de l'API à l'écran.</h1>
-        <p class="chapeau">Ingénieur en développement applicatif et IA. Aujourd'hui chez Kartu Group (application interne et ERP Odoo) et en freelance sur Mall Privé, une plateforme de ventes privées. Du cahier des charges à la mise en production : architecture, code testé, sécurité et conformité.</p>
+        <p class="badge">Available for freelance projects</p>
+        <h1>I build the web apps, online stores and AI tools your business runs on.</h1>
+        <p class="chapeau">Freelance full-stack developer based in Morocco. From the first idea to a live product: clear quote, regular demos, tested code that you own.</p>
         <div class="actions">
-          <a class="bouton bouton--principal" href="mall-prive.html">Voir l'étude de cas Mall Privé</a>
-          <a class="bouton bouton--contour" href="assets/cv/Abdelhak_AMZIL_CV.pdf" download>Télécharger mon CV</a>
+          <a class="bouton bouton--principal" href="#contact">Get a free quote</a>
+          <a class="bouton bouton--contour" href="#work">See my work</a>
         </div>
-        <p class="stack-ligne">Java · Spring Boot · Angular · Kafka · PostgreSQL · Odoo · Docker · LLM / RAG</p>
+        <p class="plateformes">Hire me <strong>directly</strong> or through <strong>Upwork</strong> and <strong>Fiverr</strong> · I work in English, French and Arabic.</p>
       </div>
       <div class="heros__visuel">
         <div class="fenetre">
           <div class="fenetre__points" aria-hidden="true"><span></span><span></span><span></span></div>
-          <div class="visuel">Capture : back-office Mall Privé (Commandes → Par vente), données fictives</div>
-          <p class="fenetre__legende">Mall Privé — ventes privées au Maroc <small>Projet phare</small></p>
+          <div class="visuel">Screenshot: Mall Privé back-office (orders by sale), sample data</div>
+          <p class="fenetre__legende">Mall Privé — private sales platform <small>Featured project</small></p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="chiffres" aria-label="Chiffres clés">
+  <section class="chiffres" aria-label="Key figures">
     <div class="conteneur">
-      <p class="chiffre"><strong>344</strong><span>tests automatisés sur l'application interne de Kartu Group</span></p>
-      <p class="chiffre"><strong>17</strong><span>modules Odoo sur mesure, couverts par 149 tests</span></p>
-      <p class="chiffre"><strong>10</strong><span>microservices Spring Boot sur Mall Privé</span></p>
-      <p class="chiffre"><strong>2025</strong><span>ingénieur d'État en informatique, ENSA Berrechid</span></p>
+      <p class="chiffre"><strong>3</strong><span>apps delivered on Mall Privé: store, vendor portal, back-office</span></p>
+      <p class="chiffre"><strong>17</strong><span>custom Odoo ERP modules, covered by 149 tests</span></p>
+      <p class="chiffre"><strong>344</strong><span>automated tests on a production app used every day</span></p>
+      <p class="chiffre"><strong>48 h</strong><span>to get a free, detailed quote</span></p>
     </div>
   </section>
 
   <section id="services" class="section">
     <div class="conteneur">
-      <h2>Deux façons de travailler ensemble</h2>
-      <p class="section__intro">Selon que vous recrutez ou que vous avez un projet à lancer.</p>
-      <div class="grille-2">
-        <article class="carte">
-          <p class="surtitre">Vous recrutez</p>
-          <h3>Un développeur autonome sur toute la chaîne</h3>
-          <ul>
-            <li>Back-end Java / Spring Boot : microservices, Kafka, sécurité OAuth2</li>
-            <li>Front-end Angular moderne : signals, tests, accessibilité</li>
-            <li>ERP Odoo : modules sur mesure, reprise de données</li>
-            <li>IA appliquée : RAG, LLM locaux, NLP</li>
-          </ul>
-          <a class="bouton bouton--contour" href="assets/cv/Abdelhak_AMZIL_CV.pdf" download>Télécharger mon CV</a>
+      <h2>What I can build for you</h2>
+      <p class="section__intro">One developer for the whole project: design of the solution, back-end, front-end and deployment.</p>
+      <div class="services">
+        <article class="service">
+          <span class="service__icone" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg></span>
+          <h3>Online store and marketplace</h3>
+          <p>Product catalogue, cart, payment (card or cash on delivery), orders, delivery tracking and an admin panel to run it all.</p>
+          <p class="ideal"><strong>Ideal for:</strong> shops, brands, new e-commerce projects</p>
         </article>
-        <article class="carte carte--sombre">
-          <p class="surtitre">Vous avez un projet</p>
-          <h3>Une plateforme sur mesure, livrée et documentée</h3>
-          <ul>
-            <li>Site e-commerce ou marketplace avec back-office complet</li>
-            <li>Intégrations : paiement, transporteur, e-mails, PDF</li>
-            <li>ERP sur mesure pour vos équipes (Odoo)</li>
-            <li>Assistant IA sur vos documents (chatbot, recherche)</li>
-          </ul>
-          <a class="bouton bouton--clair" href="#contact">Demander un devis</a>
+        <article class="service">
+          <span class="service__icone" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg></span>
+          <h3>Custom web app and back-office</h3>
+          <p>Replace spreadsheets with a secure app: dashboards, user roles, forms, exports to Excel and PDF documents.</p>
+          <p class="ideal"><strong>Ideal for:</strong> SMEs, internal teams, startups</p>
+        </article>
+        <article class="service">
+          <span class="service__icone" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"></path><path d="m2 17 10 5 10-5"></path><path d="m2 12 10 5 10-5"></path></svg></span>
+          <h3>Odoo ERP set-up and modules</h3>
+          <p>Odoo Community tailored to your business: custom modules, data migration from your old files, hosting and backups.</p>
+          <p class="ideal"><strong>Ideal for:</strong> companies managing staff, stock, vehicles or field work</p>
+        </article>
+        <article class="service">
+          <span class="service__icone" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><path d="M8 9h8"></path><path d="M8 13h5"></path></svg></span>
+          <h3>AI assistant on your documents</h3>
+          <p>A chatbot that answers from your own documents, products or procedures (RAG), with a private local model if needed.</p>
+          <p class="ideal"><strong>Ideal for:</strong> customer support, HR, knowledge bases</p>
+        </article>
+        <article class="service">
+          <span class="service__icone" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"></path><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"></path></svg></span>
+          <h3>APIs and integrations</h3>
+          <p>Connect your tools: payment gateways, shipping carriers, e-mail, CRM, or a clean REST API for your mobile app.</p>
+          <p class="ideal"><strong>Ideal for:</strong> businesses with several tools that don't talk to each other</p>
+        </article>
+        <article class="service">
+          <span class="service__icone" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"></rect><path d="M11 18h2"></path></svg></span>
+          <p class="nouveau">New</p>
+          <h3>Mobile apps for iOS and Android</h3>
+          <p>An app for your customers or your team, published on the App Store and Google Play, connected to a solid back-end and admin panel.</p>
+          <p class="ideal"><strong>Ideal for:</strong> shops, services and startups that want to be in their customers' pocket</p>
+        </article>
+        <article class="service">
+          <span class="service__icone" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"></path></svg></span>
+          <h3>Fixes and improvements</h3>
+          <p>Your app already exists? I fix bugs, add features and make releases safe (backups, versioned database changes).</p>
+          <p class="ideal"><strong>Ideal for:</strong> Java / Spring Boot, Angular and Odoo apps</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="parcours" class="section">
+  <section class="section">
     <div class="conteneur">
-      <h2>Parcours</h2>
-      <p class="section__intro">De l'école d'ingénieurs à la production.</p>
-      <ol class="parcours">
-        <li><p class="periode">Sept. 2026 — aujourd'hui</p><div><h3>Ingénieur en développement applicatif · Kartu Group, Casablanca</h3><p>Évolutions et mises en production de l'application interne du plateau (Spring Boot), et ERP Odoo 19 sur mesure pour Kobor : 17 modules, serveur et reprise des données.</p></div></li>
-        <li><p class="periode">Avril 2026 — aujourd'hui</p><div><h3>Ingénieur fullstack et IA · Freelance</h3><p>Applications web sur mesure, de l'analyse du besoin au déploiement, dont la plateforme Mall Privé.</p></div></li>
-        <li><p class="periode">Févr. — juin 2025</p><div><h3>Projet de fin d'études · 3D Smart Factory, Mohammedia</h3><p>Assistant conversationnel RAG avec des LLM locaux (Ollama, ChromaDB) : F1 de 0,71, 62 % de réponses exactes.</p></div></li>
-        <li><p class="periode">2022 — 2025</p><div><h3>Diplôme d'ingénieur d'État en informatique · ENSA Berrechid</h3><p>Certifié Microsoft Power BI Data Analyst Associate.</p></div></li>
+      <h2>Who I work with</h2>
+      <p class="section__intro">Small or large, the same care and the same quality.</p>
+      <div class="clients">
+        <div class="client"><h3>Shops and brands</h3><p>Sell online, manage orders and deliveries, see what sells.</p></div>
+        <div class="client"><h3>Startups</h3><p>Turn your idea into a working product you can show to users and investors.</p></div>
+        <div class="client"><h3>Companies and SMEs</h3><p>Digitise your processes with an ERP or a custom app your team will actually use.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section">
+    <div class="conteneur">
+      <h2>Real projects</h2>
+      <p class="section__intro">A platform built as a freelancer, apps in production at a company, and open-source projects. <a href="galerie.html">See photos and videos</a>.</p>
+      <p id="projets-statut" class="texte" role="status">Loading projects…</p>
+      <div id="projet-phare"></div>
+      <h3 class="sous-titre">In production at Kartu Group</h3>
+      <div id="projets-entreprise" class="grille-2" style="margin-bottom: 40px"></div>
+      <h3 class="sous-titre">Open-source projects</h3>
+      <div class="filtres" role="group" aria-label="Filter projects">
+        <button type="button" class="pilule" data-filtre="Tous" aria-pressed="true">All</button>
+        <button type="button" class="pilule" data-filtre="Fullstack" aria-pressed="false">Full-stack</button>
+        <button type="button" class="pilule" data-filtre="IA" aria-pressed="false">AI</button>
+        <button type="button" class="pilule" data-filtre="Data" aria-pressed="false">Data</button>
+      </div>
+      <div id="projets-personnels" class="grille-cartes"></div>
+      <noscript><p class="texte">My projects are also on <a href="https://github.com/AbdelhakAmzil">GitHub</a>.</p></noscript>
+    </div>
+  </section>
+
+  <section id="process" class="section">
+    <div class="conteneur">
+      <h2>How a project works</h2>
+      <p class="section__intro">Simple, transparent, and you stay in control at every step.</p>
+      <ol class="etapes">
+        <li><p class="numero">01</p><h3>Free quote</h3><p>We talk about your needs. Within 48 hours you get a written scope, a price and a schedule.</p></li>
+        <li><p class="numero">02</p><h3>Small deliveries</h3><p>The project is split into milestones. You see a working demo at each one and give feedback.</p></li>
+        <li><p class="numero">03</p><h3>Tested and secure</h3><p>Automated tests, security and personal-data protection built in from day one.</p></li>
+        <li><p class="numero">04</p><h3>Launch and support</h3><p>I put it online, hand over the code and documentation, and stay available for fixes.</p></li>
       </ol>
     </div>
   </section>
 
-  <section id="projets" class="section">
+  <section class="section">
     <div class="conteneur">
-      <h2>Projets</h2>
-      <p class="section__intro">Le projet phare, mes projets en entreprise, puis une sélection de dépôts publics.</p>
-      <p id="projets-statut" class="texte" role="status">Chargement des projets…</p>
-      <div id="projet-phare"></div>
-      <h3 class="sous-titre">En entreprise · Kartu Group</h3>
-      <div id="projets-entreprise" class="grille-2" style="margin-bottom: 40px"></div>
-      <h3 class="sous-titre">Projets personnels et open source</h3>
-      <div class="filtres" role="group" aria-label="Filtrer les projets">
-        <button type="button" class="pilule" data-filtre="Tous" aria-pressed="true">Tous</button>
-        <button type="button" class="pilule" data-filtre="Fullstack" aria-pressed="false">Fullstack</button>
-        <button type="button" class="pilule" data-filtre="IA" aria-pressed="false">IA</button>
-        <button type="button" class="pilule" data-filtre="Data" aria-pressed="false">Data</button>
-      </div>
-      <div id="projets-personnels" class="grille-cartes"></div>
-      <noscript><p class="texte">Mes projets sont aussi sur <a href="https://github.com/AbdelhakAmzil">GitHub</a>.</p></noscript>
+      <h2>Why work with me</h2>
+      <p class="section__intro">The habits I bring from production projects to every client.</p>
+      <ul class="garanties">
+        <li><h3>You own the code</h3><p>Everything is yours: source code, documentation and access, on your own accounts.</p></li>
+        <li><h3>Clear communication</h3><p>A short update at each milestone, in English, French or Arabic. No surprises on the bill.</p></li>
+        <li><h3>Production-grade quality</h3><p>The same practices as my company work: tests, code reviews, safe and reversible releases.</p></li>
+        <li><h3>Data protection</h3><p>GDPR and Moroccan law 09-08 in mind: only the data you need, protected access.</p></li>
+      </ul>
     </div>
   </section>
 
-  <section id="methode" class="section">
+  <section id="faq" class="section">
     <div class="conteneur">
-      <h2>Ma méthode</h2>
-      <p class="section__intro">La même rigueur en entreprise et en freelance.</p>
-      <ol class="etapes">
-        <li><p class="numero">01</p><h3>Cadrage</h3><p>Cahier des charges, priorités et contraintes légales clarifiés avant d'écrire du code.</p></li>
-        <li><p class="numero">02</p><h3>Petites livraisons</h3><p>Une fonctionnalité à la fois, validée avec vous, versionnée et documentée.</p></li>
-        <li><p class="numero">03</p><h3>Qualité vérifiée</h3><p>Tests automatisés à chaque étape, sécurité dès la conception.</p></li>
-        <li><p class="numero">04</p><h3>Mise en production maîtrisée</h3><p>Sauvegarde relue, migrations versionnées, retour arrière prêt.</p></li>
+      <h2>Frequently asked questions</h2>
+      <p class="section__intro">Still unsure? Ask me directly.</p>
+      <div class="faq">
+        <details><summary>How much does a project cost?</summary><p>It depends on the scope. After a short call or message, I send a fixed price for the whole project, split into milestones. Small fixes and ongoing improvements can be billed by the hour.</p></details>
+        <details><summary>How long does it take?</summary><p>The quote includes a schedule with a date for each milestone. You see progress at every step, not only at the end.</p></details>
+        <details><summary>Can we work through Upwork or Fiverr?</summary><p>Yes. You can hire me on Upwork or Fiverr and use their payment protection, or work with me directly with milestone payments.</p></details>
+        <details><summary>Which technologies do you use?</summary><p>Java and Spring Boot for the back-end, Angular for the web front-end, mobile apps for iOS and Android, PostgreSQL, Docker, Odoo for ERP, and Python with LLMs for AI features. I pick stable, well-supported tools so your app lasts.</p></details>
+        <details><summary>What happens after the launch?</summary><p>You get the code, the documentation and the access. I stay available for fixes and new features, by the hour or with a monthly support plan.</p></details>
+        <details><summary>Do you work with clients outside Morocco?</summary><p>Yes, remotely. I am based in Casablanca (GMT) and work with clients in English, French or Arabic.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="conteneur apropos">
+      <div>
+        <h2>About me</h2>
+        <p class="texte">I'm Abdelhak, a state-certified computer engineer (ENSA Berrechid, 2025). I build complete web platforms with Java / Spring Boot and Angular, ERP solutions with Odoo, and AI features with LLMs and RAG.</p>
+        <p class="texte">Alongside my freelance projects, I develop and maintain production applications at Kartu Group in Casablanca. That's where the reliability habits you get on your project come from.</p>
+        <p><a class="bouton bouton--contour" href="assets/cv/Abdelhak_AMZIL_CV.pdf" download>Download my resume</a></p>
+      </div>
+      <ol class="parcours">
+        <li><p class="periode">Sept. 2026 — today</p><div><h3>Application developer · Kartu Group</h3><p>Internal web app and Odoo 19 ERP in production.</p></div></li>
+        <li><p class="periode">Apr. 2026 — today</p><div><h3>Freelance full-stack and AI developer</h3><p>Custom web apps, including the Mall Privé platform.</p></div></li>
+        <li><p class="periode">2022 — 2025</p><div><h3>Engineering degree in computer science</h3><p>ENSA Berrechid · Microsoft Certified Power BI Data Analyst.</p></div></li>
       </ol>
     </div>
   </section>
@@ -144,23 +211,34 @@
     <div class="conteneur">
       <div class="contact__bloc">
         <div class="contact__texte">
-          <h2>Parlons de votre projet</h2>
-          <p>Un poste à pourvoir, une plateforme à construire ou une idée à cadrer : je réponds sous 48 heures.</p>
+          <h2>Tell me about your project</h2>
+          <p>A store to launch, an app to build or an idea to scope: describe it in a few lines and get a free quote within 48 hours.</p>
           <a href="mailto:abdelhakamzil.2000@gmail.com">abdelhakamzil.2000@gmail.com</a>
           <p class="contact__liens">
-            <a href="https://github.com/AbdelhakAmzil" rel="noopener">GitHub</a>
             <a href="https://linkedin.com/in/AbdelhakAMZIL" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/AbdelhakAmzil" rel="noopener">GitHub</a>
           </p>
         </div>
         <form id="formulaire-contact" class="formulaire">
-          <label for="nom">Nom</label>
+          <label for="nom">Your name</label>
           <input id="nom" name="nom" type="text" autocomplete="name" required>
           <label for="courriel">E-mail</label>
-          <input id="courriel" name="courriel" type="email" autocomplete="email">
-          <label for="message">Votre besoin</label>
+          <input id="courriel" name="courriel" type="email" autocomplete="email" required>
+          <label for="type">Type of project</label>
+          <select id="type" name="type">
+            <option>Online store or marketplace</option>
+            <option>Custom web app or back-office</option>
+            <option>Odoo ERP</option>
+            <option>AI assistant or chatbot</option>
+            <option>API or integration</option>
+            <option>Mobile app (iOS / Android)</option>
+            <option>Fixes or improvements</option>
+            <option>Something else</option>
+          </select>
+          <label for="message">Your project</label>
           <textarea id="message" name="message" rows="4" required></textarea>
-          <button type="submit" class="bouton bouton--clair">Écrire le message</button>
-          <p class="formulaire__note">Le message s'ouvre dans votre messagerie : rien n'est enregistré sur ce site.</p>
+          <button type="submit" class="bouton bouton--clair">Write the message</button>
+          <p class="formulaire__note">The message opens in your e-mail app: nothing is stored on this site.</p>
         </form>
       </div>
     </div>
@@ -169,8 +247,8 @@
 
 <footer class="pied">
   <div class="conteneur">
-    <span>© <span id="annee">2026</span> Abdelhak Amzil · Maroc</span>
-    <span>Projets mis à jour depuis un fichier de données</span>
+    <span>© <span id="annee">2026</span> Abdelhak Amzil · Casablanca, Morocco</span>
+    <a href="fr/" hreflang="fr" lang="fr">Version française</a>
   </div>
 </footer>
 

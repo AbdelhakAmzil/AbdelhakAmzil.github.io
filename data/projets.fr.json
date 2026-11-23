@@ -13,7 +13,7 @@
     ],
     "image": "",
     "texteImage": "Galerie : site client, portail vendeur, back-office, bon de réception PDF",
-    "lien": "mall-prive.html"
+    "lien": "fr/mall-prive.html"
   },
   "entreprise": [
     {
@@ -51,70 +51,80 @@
       "categorie": "IA",
       "langage": "Java",
       "resume": "Assistant RH intelligent : agent avec chaîne RAG et mémoire de conversation (Spring AI, Ollama, pgvector, Angular).",
-      "lien": "https://github.com/AbdelhakAmzil"
+      "lien": "https://github.com/AbdelhakAmzil",
+      "libelleCategorie": "IA"
     },
     {
       "titre": "E-Commerce Microservices",
       "categorie": "Fullstack",
       "langage": "Java",
       "resume": "Architecture distribuée : passerelle API, services découplés, Keycloak, Kafka et Docker.",
-      "lien": "https://github.com/AbdelhakAmzil"
+      "lien": "https://github.com/AbdelhakAmzil",
+      "libelleCategorie": "Fullstack"
     },
     {
       "titre": "gestion-de-stock-api",
       "categorie": "Fullstack",
       "langage": "Java",
       "resume": "API REST de gestion de stock en Spring Boot : inventaire, opérations CRUD et règles métier.",
-      "lien": "https://github.com/AbdelhakAmzil/gestion-de-stock-api"
+      "lien": "https://github.com/AbdelhakAmzil/gestion-de-stock-api",
+      "libelleCategorie": "Fullstack"
     },
     {
       "titre": "gestion-de-stock-frontend",
       "categorie": "Fullstack",
       "langage": "TypeScript",
       "resume": "Interface Angular du système de stock, branchée sur l'API.",
-      "lien": "https://github.com/AbdelhakAmzil/gestion-de-stock-frontend"
+      "lien": "https://github.com/AbdelhakAmzil/gestion-de-stock-frontend",
+      "libelleCategorie": "Fullstack"
     },
     {
       "titre": "e-commerce-app",
       "categorie": "Fullstack",
       "langage": "Java",
       "resume": "Application e-commerce : produits, commandes, utilisateurs et paiement.",
-      "lien": "https://github.com/AbdelhakAmzil/e-commerce-app"
+      "lien": "https://github.com/AbdelhakAmzil/e-commerce-app",
+      "libelleCategorie": "Fullstack"
     },
     {
       "titre": "local-rag",
       "categorie": "IA",
       "langage": "Python",
       "resume": "Chaîne RAG locale avec Ollama et une base vectorielle, sans connexion internet.",
-      "lien": "https://github.com/AbdelhakAmzil/local-rag"
+      "lien": "https://github.com/AbdelhakAmzil/local-rag",
+      "libelleCategorie": "IA"
     },
     {
       "titre": "chatbot-PubMedBERT",
       "categorie": "IA",
       "langage": "Python",
       "resume": "Assistant médical qui répond à partir de la littérature scientifique (PubMedBERT).",
-      "lien": "https://github.com/AbdelhakAmzil/chatbot-PubMedBERT"
+      "lien": "https://github.com/AbdelhakAmzil/chatbot-PubMedBERT",
+      "libelleCategorie": "IA"
     },
     {
       "titre": "HydroTrack-AI-API",
       "categorie": "IA",
       "langage": "Python",
       "resume": "API de suivi d'hydratation avec des recommandations par apprentissage automatique.",
-      "lien": "https://github.com/AbdelhakAmzil/HydroTrack-AI-API"
+      "lien": "https://github.com/AbdelhakAmzil/HydroTrack-AI-API",
+      "libelleCategorie": "IA"
     },
     {
       "titre": "churn-analysis",
       "categorie": "Data",
       "langage": "T-SQL",
       "resume": "Analyse de l'attrition client : repérage des clients à risque en SQL.",
-      "lien": "https://github.com/AbdelhakAmzil/churn-analysis"
+      "lien": "https://github.com/AbdelhakAmzil/churn-analysis",
+      "libelleCategorie": "Data"
     },
     {
       "titre": "Flight & Price Trend Analysis",
       "categorie": "Data",
       "langage": "Python",
       "resume": "Analyse des tendances et de la saisonnalité des prix des billets d'avion.",
-      "lien": "https://github.com/AbdelhakAmzil/Flight-and-Price-Trend-Analysis"
+      "lien": "https://github.com/AbdelhakAmzil/Flight-and-Price-Trend-Analysis",
+      "libelleCategorie": "Data"
     }
   ]
 }

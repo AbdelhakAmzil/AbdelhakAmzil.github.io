@@ -228,3 +228,39 @@ p { margin: 0; }
 .vignette__titre { position: relative; font-size: 12px; font-weight: 600; color: var(--texte); line-height: 1.35; }
 .vignette__type { position: relative; font-size: 11px; font-weight: 600; color: var(--discret); }
 .vide { padding: 48px 24px; border-radius: 16px; background: var(--surface); border: 1px dashed var(--bordure-forte); text-align: center; color: var(--discret); }
+
+/* Freelance : services, clients, garanties, FAQ, langue */
+.langue { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; border: 1px solid var(--bordure-forte); border-radius: 8px; color: var(--texte); text-decoration: none; font-size: 14px; font-weight: 600; }
+.langue:hover { border-color: var(--encre); color: var(--encre); }
+.plateformes { font-size: 14px; color: var(--discret); }
+.plateformes strong { color: var(--encre); }
+.services { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+.service { background: var(--surface); border: 1px solid var(--bordure); border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px; }
+.service__icone { width: 44px; height: 44px; border-radius: 10px; background: var(--accent-clair); color: var(--accent); display: flex; align-items: center; justify-content: center; }
+.service h3 { font-size: 20px; }
+.service p { color: var(--texte); line-height: 1.55; }
+.service .ideal { margin-top: auto; font-size: 14px; color: var(--discret); }
+.service .ideal strong { color: var(--encre); }
+.clients { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.client { background: var(--surface); border: 1px solid var(--bordure); border-radius: var(--rayon); padding: 24px; }
+.client h3 { font-size: 18px; margin-bottom: 6px; font-family: var(--corps); font-weight: 600; letter-spacing: 0; }
+.client p { color: var(--texte); line-height: 1.55; }
+.garanties { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.garanties li { background: var(--sombre); color: #FFFFFF; border-radius: var(--rayon); padding: 24px; }
+.garanties h3 { font-size: 18px; margin-bottom: 6px; font-family: var(--corps); font-weight: 600; letter-spacing: 0; }
+.garanties p { color: var(--sombre-texte); line-height: 1.55; }
+.faq { display: flex; flex-direction: column; gap: 10px; max-width: 860px; }
+.faq details { background: var(--surface); border: 1px solid var(--bordure); border-radius: var(--rayon); padding: 0 20px; }
+.faq summary { min-height: 56px; display: flex; align-items: center; font-weight: 600; cursor: pointer; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; margin-left: auto; padding-left: 16px; font-size: 22px; color: var(--accent); }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { color: var(--texte); line-height: 1.6; padding-bottom: 18px; }
+.apropos { display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start; }
+.apropos > div { flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+.apropos .parcours { flex: 1 1 420px; min-width: 0; }
+.apropos .parcours li { padding: 16px 18px; }
+.apropos .parcours .periode { flex-basis: 100%; font-size: 14px; }
+.formulaire select { min-height: 44px; border-radius: 8px; border: 1px solid #3A4150; background: #1B2030; color: #FFFFFF; padding: 0 12px; font: inherit; }
+.nouveau { align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: var(--vert-clair); color: var(--vert-texte); font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+.service .nouveau { color: var(--vert-texte); }
