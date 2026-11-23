@@ -128,30 +128,64 @@
       "nom": "KARTUAPP",
       "medias": [
         {
+          "type": "video",
+          "titre": "Demo: commenting an absence with a certificate",
+          "legende": "Comment, certificate dragged and dropped, saved. Mockup, sample data.",
+          "fichier": "assets/video/maquette-kartuapp-commentaire.mp4",
+          "youtube": "",
+          "duree": "0:15",
+          "image": "assets/video/maquette-kartuapp-commentaire.webp"
+        },
+        {
+          "type": "video",
+          "titre": "Demo: live floor supervision",
+          "legende": "Timers, end of a break, a late log-in, an agent's details. Mockup, sample data.",
+          "fichier": "assets/video/maquette-kartuapp-supervision.mp4",
+          "youtube": "",
+          "duree": "0:15",
+          "image": "assets/video/maquette-kartuapp-supervision.webp"
+        },
+        {
           "type": "photo",
           "titre": "Working-day adjustments",
           "legende": "Late arrivals, breaks, absence with an attached certificate, public holiday. Mockup, sample data.",
-          "image": "assets/img/maquettes/01-nova-ajustements.webp"
+          "image": "assets/img/maquettes/01-nova-ajustements.webp",
+          "vignette": "assets/img/maquettes/01-nova-ajustements-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Commenting an absence",
+          "legende": "Checked attachments: PDF, JPG or PNG, up to 3 files. Mockup, sample data.",
+          "image": "assets/img/maquettes/07-nova-commentaire.webp",
+          "vignette": "assets/img/maquettes/07-nova-commentaire-800.webp"
         },
         {
           "type": "photo",
           "titre": "Live floor supervision",
           "legende": "Agents on calls, on break, or late against today's schedule. Mockup, sample data.",
-          "image": "assets/img/maquettes/02-nova-supervision.webp"
+          "image": "assets/img/maquettes/02-nova-supervision.webp",
+          "vignette": "assets/img/maquettes/02-nova-supervision-800.webp"
         },
         {
           "type": "photo",
           "titre": "Monthly attendance bonus",
           "legende": "Every scheduled day checked; failing days to adjust or justify. Mockup, sample data.",
-          "image": "assets/img/maquettes/03-nova-prime-presence.webp"
+          "image": "assets/img/maquettes/03-nova-prime-presence.webp",
+          "vignette": "assets/img/maquettes/03-nova-prime-presence-800.webp"
         },
         {
-          "type": "video",
-          "titre": "Demo: absence comment with attachment",
-          "legende": "Certificate attached, file type checked from its content.",
-          "youtube": "",
-          "duree": "",
-          "image": ""
+          "type": "photo",
+          "titre": "Agent space",
+          "legende": "Clock-in, today's timeline, bonus, leave and weekly schedule. Mockup, sample data.",
+          "image": "assets/img/maquettes/08-nova-espace-agent.webp",
+          "vignette": "assets/img/maquettes/08-nova-espace-agent-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Leave",
+          "legende": "Requests to approve, planned absences and balances. Mockup, sample data.",
+          "image": "assets/img/maquettes/09-nova-conges.webp",
+          "vignette": "assets/img/maquettes/09-nova-conges-800.webp"
         }
       ]
     },
@@ -160,30 +194,64 @@
       "nom": "Kobor ERP",
       "medias": [
         {
+          "type": "video",
+          "titre": "Demo: handover report signed on a tablet",
+          "legende": "Vehicle check, finger signature, locked PDF. Mockup, sample data.",
+          "fichier": "assets/video/maquette-kobor-pv-signature.mp4",
+          "youtube": "",
+          "duree": "0:16",
+          "image": "assets/video/maquette-kobor-pv-signature.webp"
+        },
+        {
+          "type": "video",
+          "titre": "Demo: importing the month's output",
+          "legende": "Extraction import, workforce on the date, ranking and working days. Mockup, sample data.",
+          "fichier": "assets/video/maquette-kobor-production.mp4",
+          "youtube": "",
+          "duree": "0:13",
+          "image": "assets/video/maquette-kobor-production.webp"
+        },
+        {
           "type": "photo",
           "titre": "Van record",
           "legende": "Car policy, fuel card, GPS, driver history. Odoo mockup, sample data.",
-          "image": "assets/img/maquettes/04-atlas-camionnette.webp"
+          "image": "assets/img/maquettes/04-atlas-camionnette.webp",
+          "vignette": "assets/img/maquettes/04-atlas-camionnette-800.webp"
         },
         {
           "type": "photo",
           "titre": "Handover report signed on a tablet",
           "legende": "Vehicle check, finger signature, locked PDF. Mockup, sample data.",
-          "image": "assets/img/maquettes/05-atlas-pv-signature.webp"
+          "image": "assets/img/maquettes/05-atlas-pv-signature.webp",
+          "vignette": "assets/img/maquettes/05-atlas-pv-signature-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Employee record: documents and due dates",
+          "legende": "Licence, safety certificates, medical fitness, automatic reminders. Mockup, sample data.",
+          "image": "assets/img/maquettes/10-atlas-fiche-agent.webp",
+          "vignette": "assets/img/maquettes/10-atlas-fiche-agent-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Dispatch / employment declaration cross-check",
+          "legende": "Dispatching company compared with the declared employer on the date. Mockup, sample data.",
+          "image": "assets/img/maquettes/11-atlas-controle-dimona.webp",
+          "vignette": "assets/img/maquettes/11-atlas-controle-dimona-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Fuel cards",
+          "legende": "Fill-ups matched to the van and driver, litres and € per month. Mockup, sample data.",
+          "image": "assets/img/maquettes/12-atlas-carburant.webp",
+          "vignette": "assets/img/maquettes/12-atlas-carburant-800.webp"
         },
         {
           "type": "photo",
           "titre": "Technician output",
           "legende": "Monthly ranking and working days, no end-customer data. Mockup, sample data.",
-          "image": "assets/img/maquettes/06-atlas-production.webp"
-        },
-        {
-          "type": "video",
-          "titre": "Demo: intervention and cross-check",
-          "legende": "From dispatch to intervention checks.",
-          "youtube": "",
-          "duree": "",
-          "image": ""
+          "image": "assets/img/maquettes/06-atlas-production.webp",
+          "vignette": "assets/img/maquettes/06-atlas-production-800.webp"
         }
       ]
     },

@@ -128,30 +128,64 @@
       "nom": "KARTUAPP",
       "medias": [
         {
+          "type": "video",
+          "titre": "Démo : commenter une absence avec un certificat",
+          "legende": "Commentaire, certificat glissé-déposé, enregistrement. Maquette, données fictives.",
+          "fichier": "assets/video/maquette-kartuapp-commentaire.mp4",
+          "youtube": "",
+          "duree": "0:15",
+          "image": "assets/video/maquette-kartuapp-commentaire.webp"
+        },
+        {
+          "type": "video",
+          "titre": "Démo : supervision du plateau en direct",
+          "legende": "Chronos, fin de pause, connexion en retard, détail d'un agent. Maquette, données fictives.",
+          "fichier": "assets/video/maquette-kartuapp-supervision.mp4",
+          "youtube": "",
+          "duree": "0:15",
+          "image": "assets/video/maquette-kartuapp-supervision.webp"
+        },
+        {
           "type": "photo",
           "titre": "Ajustements des jours effectifs",
           "legende": "Retards, pauses, absence avec certificat joint, jour férié. Maquette, données fictives.",
-          "image": "assets/img/maquettes/01-nova-ajustements.webp"
+          "image": "assets/img/maquettes/01-nova-ajustements.webp",
+          "vignette": "assets/img/maquettes/01-nova-ajustements-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Commenter une absence",
+          "legende": "Pièces jointes vérifiées : PDF, JPG ou PNG, 3 fichiers au plus. Maquette, données fictives.",
+          "image": "assets/img/maquettes/07-nova-commentaire.webp",
+          "vignette": "assets/img/maquettes/07-nova-commentaire-800.webp"
         },
         {
           "type": "photo",
           "titre": "Supervision du plateau en direct",
           "legende": "Production, pauses et retards par rapport au planning. Maquette, données fictives.",
-          "image": "assets/img/maquettes/02-nova-supervision.webp"
+          "image": "assets/img/maquettes/02-nova-supervision.webp",
+          "vignette": "assets/img/maquettes/02-nova-supervision-800.webp"
         },
         {
           "type": "photo",
           "titre": "Prime de présence du mois",
           "legende": "Chaque jour planifié contrôlé, jours KO à ajuster ou justifier. Maquette, données fictives.",
-          "image": "assets/img/maquettes/03-nova-prime-presence.webp"
+          "image": "assets/img/maquettes/03-nova-prime-presence.webp",
+          "vignette": "assets/img/maquettes/03-nova-prime-presence-800.webp"
         },
         {
-          "type": "video",
-          "titre": "Démo : commentaire d'absence avec pièce jointe",
-          "legende": "Certificat joint, type de fichier vérifié par son contenu.",
-          "youtube": "",
-          "duree": "",
-          "image": ""
+          "type": "photo",
+          "titre": "Espace agent",
+          "legende": "Pointage, journée, prime, congés et planning de la semaine. Maquette, données fictives.",
+          "image": "assets/img/maquettes/08-nova-espace-agent.webp",
+          "vignette": "assets/img/maquettes/08-nova-espace-agent-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Congés",
+          "legende": "Demandes à valider, absences prévues et soldes. Maquette, données fictives.",
+          "image": "assets/img/maquettes/09-nova-conges.webp",
+          "vignette": "assets/img/maquettes/09-nova-conges-800.webp"
         }
       ]
     },
@@ -160,30 +194,64 @@
       "nom": "Kobor ERP",
       "medias": [
         {
+          "type": "video",
+          "titre": "Démo : PV de remise signé sur tablette",
+          "legende": "État des lieux, signature au doigt, PDF verrouillé. Maquette, données fictives.",
+          "fichier": "assets/video/maquette-kobor-pv-signature.mp4",
+          "youtube": "",
+          "duree": "0:16",
+          "image": "assets/video/maquette-kobor-pv-signature.webp"
+        },
+        {
+          "type": "video",
+          "titre": "Démo : import de la production du mois",
+          "legende": "Import de l'extraction, effectif à la date, classement et journées. Maquette, données fictives.",
+          "fichier": "assets/video/maquette-kobor-production.mp4",
+          "youtube": "",
+          "duree": "0:13",
+          "image": "assets/video/maquette-kobor-production.webp"
+        },
+        {
           "type": "photo",
           "titre": "Fiche camionnette",
           "legende": "Car policy, carte carburant, GPS, historique des conducteurs. Maquette Odoo, données fictives.",
-          "image": "assets/img/maquettes/04-atlas-camionnette.webp"
+          "image": "assets/img/maquettes/04-atlas-camionnette.webp",
+          "vignette": "assets/img/maquettes/04-atlas-camionnette-800.webp"
         },
         {
           "type": "photo",
           "titre": "PV de remise signé sur tablette",
           "legende": "État des lieux, signature au doigt, PDF verrouillé. Maquette, données fictives.",
-          "image": "assets/img/maquettes/05-atlas-pv-signature.webp"
+          "image": "assets/img/maquettes/05-atlas-pv-signature.webp",
+          "vignette": "assets/img/maquettes/05-atlas-pv-signature-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Fiche agent : documents et échéances",
+          "legende": "Permis, VCA, habilitations, aptitude médicale, rappels automatiques. Maquette, données fictives.",
+          "image": "assets/img/maquettes/10-atlas-fiche-agent.webp",
+          "vignette": "assets/img/maquettes/10-atlas-fiche-agent-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Contrôle croisé dispatch / Dimona",
+          "legende": "Société du dispatch comparée à l'employeur déclaré à la date. Maquette, données fictives.",
+          "image": "assets/img/maquettes/11-atlas-controle-dimona.webp",
+          "vignette": "assets/img/maquettes/11-atlas-controle-dimona-800.webp"
+        },
+        {
+          "type": "photo",
+          "titre": "Carburant Q8",
+          "legende": "Pleins rattachés à la camionnette et au conducteur, litres et € par mois. Maquette, données fictives.",
+          "image": "assets/img/maquettes/12-atlas-carburant.webp",
+          "vignette": "assets/img/maquettes/12-atlas-carburant-800.webp"
         },
         {
           "type": "photo",
           "titre": "Production des techniciens",
           "legende": "Classement du mois et journées, sans donnée de client final. Maquette, données fictives.",
-          "image": "assets/img/maquettes/06-atlas-production.webp"
-        },
-        {
-          "type": "video",
-          "titre": "Démo : intervention et contrôle croisé",
-          "legende": "Du dispatch au contrôle des interventions.",
-          "youtube": "",
-          "duree": "",
-          "image": ""
+          "image": "assets/img/maquettes/06-atlas-production.webp",
+          "vignette": "assets/img/maquettes/06-atlas-production-800.webp"
         }
       ]
     },
